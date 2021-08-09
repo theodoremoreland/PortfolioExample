@@ -213,6 +213,108 @@ footer a {
     margin: 0px 40px;
 }
 
+@media screen and (min-width: 1280px) {
+    main > section {
+        min-height: 350px;
+    }
+
+    p {
+        font-size: var(--header4);
+        /* text-align: justify; */
+    }
+
+    #about-me img {
+        height: 380px;
+        border-radius: 200px;
+    }
+
+    .sample {
+        max-width: 1200px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    h1 {
+        font-size: 4rem;
+    }
+
+    h2 {
+        font-size: 4rem;
+    }
+
+    h3 {
+        font-size: 3rem;
+    }
+
+    nav li, footer a {
+        font-size: var(--header1);
+        margin: 0px 15px 0px 15px;
+    }
+
+    main > section {
+        min-height: 700px;
+        padding: 150px;
+    }
+
+    p {
+        font-size: var(--header1);
+        text-align: justify;
+        margin-right: 15px;
+    }
+
+    #about-me img {
+        height: 600px;
+        border-radius: 300px;
+    }
+
+    .sample {
+        max-width: 1440px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    h1 {
+        font-size: 9rem;
+    }
+
+    h2 {
+        font-size: 7rem;
+    }
+
+    h3 {
+        font-size: 6rem;
+    }
+
+    nav li, footer a {
+        font-size: 5rem;
+        margin: 0px 35px 0px 35px;
+    }
+
+    main > section {
+        min-height: 1200px;
+        padding: 300px;
+    }
+
+    p {
+        font-size: 5rem;
+        text-align: justify;
+        margin-right: 35px;
+    }
+
+    #about-me img {
+        height: 1000px;
+        border-radius: 600px;
+    }
+
+    .sample {
+        max-width: 1440px;
+    }
+
+    footer {
+        min-height: 400px;
+    }
+}
+
 /* keyframe animations which will be used to animate the title */
 @keyframes title {
     from {

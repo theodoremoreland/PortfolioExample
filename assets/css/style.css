@@ -5,7 +5,7 @@
     --header2: 2.25rem;
     --header3: 1.85rem;
     --header4: 1.5rem;
-    --body1: 1.5rem;
+    --body1: 1rem;
     --nav: 1.6rem;
     --footer: 1rem;
     --family1: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -33,7 +33,13 @@ h3 {
 
 a {
     text-decoration: none;
-    color: var(--secondary-color) 
+}
+
+p {
+    font-size: var(--body1);
+    line-height: 1.5;
+    /* text-align: justify; */
+    text-justify: inter-word;
 }
 
 /* ------------------- HEADER ------------------- */
@@ -56,6 +62,10 @@ nav {
     flex-wrap: nowrap;
     justify-content: flex-end;
     margin-right: 50px;
+}
+
+nav a {
+    color: var(--secondary-color);
 }
 
 nav li {
@@ -152,6 +162,7 @@ main > section {
     text-align: center;
     margin: 0px 5px 20px 5px;
     width: 40%;
+    max-width: 800px;
 }
 
 .sample img {
@@ -167,6 +178,39 @@ main > section {
     width: 100%;
 }
 
+/* ------------------- FOOTER ------------------- */
+
+footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+    min-height: 150px;
+    text-align: center;
+    color: var(--main-color);
+    background-color: var(--accent-color);
+}
+
+footer h3 {
+    width: 100%;
+}
+
+footer ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: -50px;
+}
+
+footer a {
+    color: var(--main-color);
+    font-size: var(--nav);
+    margin: 0px 40px;
+}
+
 /* keyframe animations which will be used to animate the title */
 @keyframes title {
     from {
@@ -177,9 +221,9 @@ main > section {
       font-size: var(--header1);
       opacity: 1;
     }
-  }
+}
   
-  @keyframes smaller-title {
+@keyframes smaller-title {
     from {
       opacity: 0;
     }
@@ -188,7 +232,7 @@ main > section {
       font-size: var(--header3);
       opacity: 1;
     }
-  }
+}
   
   @keyframes subtitle {
     from {
@@ -198,4 +242,4 @@ main > section {
     to {
       opacity: 1;
     }
-  }
+}

@@ -272,7 +272,7 @@ footer a {
     }
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 3200px) {
     h1 {
         font-size: 9rem;
     }
@@ -323,17 +323,6 @@ footer a {
   
     to {
       font-size: var(--header1);
-      opacity: 1;
-    }
-}
-  
-@keyframes smaller-title {
-    from {
-      opacity: 0;
-    }
-  
-    to {
-      font-size: var(--header3);
       opacity: 1;
     }
 }

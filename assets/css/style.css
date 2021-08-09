@@ -167,11 +167,13 @@ main > section {
 
 .sample img {
     width: 100%;
+    border: 0.25px solid black;
     transition: transform .2s; /* Animation */
 }
 
 .sample img:hover {
     transform: scale(1.025);
+   
 }
 
 .sample.large {

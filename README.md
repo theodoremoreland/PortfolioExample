@@ -11,6 +11,7 @@
 - Contact Info section
 - Website must be deployed to live server
 - Website must be responsive using flexbox and media queries
+- Repo must have numerous, detailed commit messages
 - Repo must have a detailed README
     - README has screenshot of website
     - README has description of website

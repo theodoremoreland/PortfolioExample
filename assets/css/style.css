@@ -22,6 +22,7 @@
     --header-large: 2.25rem AtkinsonHyperlegible-Bold;
     --header-medium: 1.85rem AtkinsonHyperlegible-Bold;
     --header-small: 1.5rem AtkinsonHyperlegible-Italic;
+    --body-large: 1.23rem AtkinsonHyperlegible;
     --body-medium: 1rem AtkinsonHyperlegible;
     --body-small: 0.9rem AtkinsonHyperlegible;
     --nav-medium: 1.6rem AtkinsonHyperlegible;
@@ -117,6 +118,29 @@ nav li {
     animation: subtitle 1.2s forwards linear;
     animation-delay: 1.2s;
 }
+
+/* keyframe animations which will be used to animate the title */
+@keyframes title {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      font: var(--header-large);
+      opacity: 1;
+    }
+}
+  
+  @keyframes subtitle {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+}
+
 
 /* ------------------- MAIN CONTAINER ------------------- */
 
@@ -231,31 +255,6 @@ footer a {
     margin: 12px 0px;
 }
 
-
-/* keyframe animations which will be used to animate the title */
-
-@keyframes title {
-    from {
-      opacity: 0;
-    }
-  
-    to {
-      font: var(--header-large);
-      opacity: 1;
-    }
-}
-  
-  @keyframes subtitle {
-    from {
-      opacity: 0;
-    }
-  
-    to {
-      opacity: 1;
-    }
-}
-
-
 /* 320px — 480px: Mobile devices
 481px — 768px: iPads, Tablets
 769px — 1024px: Small screens, laptops
@@ -296,4 +295,55 @@ footer a {
         }
     }
     
+}
+
+@media screen and (min-width: 769px) {
+    p {
+        font: var(--body-large);
+    }
+
+    #about-me {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #about-me h2 {
+        text-align: center;
+        margin-top: 0px;
+    }
+    
+    #about-me div:nth-child(2) {
+        order: 1;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #about-me img {
+        height: 245px;
+        border-radius: 200px;
+    }
+
+    .sample h3 {
+        font: var(--header-medium);
+    }
+
+    footer h4 {
+        font: var(--header-medium);
+        width: 100%;
+        margin: 10px 0px;
+    }
+    
+    footer ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    footer a {
+        color: var(--main-color);
+        font: var(--nav-small);
+        display: inline-block;
+        margin: 12px 12px;
+    }
 }

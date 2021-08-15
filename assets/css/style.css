@@ -1,34 +1,48 @@
+@font-face {
+    font-family: AtkinsonHyperlegible;
+    src: url("../fonts/AtkinsonHyperlegible-Regular.ttf");
+}
+
+@font-face {
+    font-family: AtkinsonHyperlegible-Bold;
+    src: url("../fonts/AtkinsonHyperlegible-Bold.ttf");
+}
+
+@font-face {
+    font-family: AtkinsonHyperlegible-Italic;
+    src: url("../fonts/AtkinsonHyperlegible-Italic.ttf");
+}
+  
 /* ------------------- VARIABLES ------------------- */
 
 :root {
-    --header1: 2.8rem;
-    --header2: 2.25rem;
-    --header3: 1.85rem;
-    --header4: 1.5rem;
-    --body1: 1rem;
-    --nav: 1.6rem;
-    --footer: 1rem;
-    --family1: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    --header1: 2.8rem AtkinsonHyperlegible-Bold;
+    --header2: 2.25rem AtkinsonHyperlegible-Bold;
+    --header3: 1.85rem AtkinsonHyperlegible-Bold;
+    --header4: 1.5rem AtkinsonHyperlegible-Italic;
+    --body1: 1rem AtkinsonHyperlegible;
+    --nav: 1.6rem AtkinsonHyperlegible;
+    --footer: 1rem AtkinsonHyperlegible;
     --main-color: #ffffff;
     --secondary-color: #405303;
     --accent-color: #4A647A;
   }
 
-  /* ------------------- GLOBAL ------------------- */
+/* ------------------- GLOBAL ------------------- */
 
 h1 {
-    font-size: var(--header1);
+    font: var(--header1);
     color: var(--main-color);
 }
 
 h2 {
-    font-size: var(--header2);
+    font: var(--header2);
     color: var(--accent-color);
     margin-bottom: 20px;
 }
 
 h3 {
-    font-size: var(--header3);
+    font: var(--header3);
 }
 
 a {
@@ -36,7 +50,7 @@ a {
 }
 
 p {
-    font-size: var(--body1);
+    font: var(--body1);
     line-height: 1.5;
     /* text-align: justify; */
     text-justify: inter-word;
@@ -69,7 +83,7 @@ nav a {
 }
 
 nav li {
-    font-size: var(--nav);
+    font: var(--nav);
     display: inline-block;
     margin: 0px 15px 0px 15px;
 }
@@ -101,7 +115,7 @@ nav li {
 
 #subtitle {
     opacity: 0;
-    font-size: var(--header4);
+    font: var(--header4);
     animation: subtitle 1.2s forwards linear;
     animation-delay: 1.2s;
 }
@@ -168,7 +182,7 @@ main > section {
 .sample img {
     width: 100%;
     border: 0.25px solid black;
-    transition: transform .2s; /* Animation */
+    transition: transform .2s;
 }
 
 .sample img:hover {
@@ -209,9 +223,12 @@ footer ul {
 
 footer a {
     color: var(--main-color);
-    font-size: var(--nav);
+    font: var(--nav);
     margin: 0px 40px;
 }
+
+
+/* ------------------- MEDIA QUERIES ------------------- */
 
 @media screen and (min-width: 1280px) {
     main > section {
@@ -219,7 +236,7 @@ footer a {
     }
 
     p {
-        font-size: var(--header4);
+        font: var(--header4);
         /* text-align: justify; */
     }
 
@@ -316,13 +333,14 @@ footer a {
 }
 
 /* keyframe animations which will be used to animate the title */
+
 @keyframes title {
     from {
       opacity: 0;
     }
   
     to {
-      font-size: var(--header1);
+      font: var(--header1);
       opacity: 1;
     }
 }

@@ -1,3 +1,5 @@
+/* BASE DESIGN BASED ON APPEARENCE ON GALAXY FOLD (280px) */
+
 @font-face {
     font-family: AtkinsonHyperlegible;
     src: url("../fonts/AtkinsonHyperlegible-Regular.ttf");
@@ -262,21 +264,36 @@ footer a {
 
 /* ------------------- MEDIA QUERIES ------------------- */
 
-/* @media screen and (min-width: 320px) {
-    main > section {
-        min-height: 350px;
+@media screen and (min-width: 320px) {
+    nav li {
+        margin: 0px 8px;
     }
+}
 
-    p {
-        font: var(--header-small);
+@media screen and (min-width: 481px) {
+    nav li {
+        font: var(--nav-medium);
+        margin: 0px 15px;
     }
 
     #about-me img {
-        height: 380px;
+        height: 300px;
         border-radius: 200px;
     }
 
-    .sample {
-        max-width: 1200px;
+    p {
+        font: var(--body-medium);
     }
-} */
+
+    @keyframes title {
+        from {
+          opacity: 0;
+        }
+      
+        to {
+          font: var(--header-extra-large);
+          opacity: 1;
+        }
+    }
+    
+}

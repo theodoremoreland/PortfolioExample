@@ -22,6 +22,7 @@
     --header-large: 2.25rem AtkinsonHyperlegible-Bold;
     --header-medium: 1.85rem AtkinsonHyperlegible-Bold;
     --header-small: 1.5rem AtkinsonHyperlegible-Italic;
+    --body-extra-large: 1.5rem AtkinsonHyperlegible;
     --body-large: 1.23rem AtkinsonHyperlegible;
     --body-medium: 1rem AtkinsonHyperlegible;
     --body-small: 0.9rem AtkinsonHyperlegible;
@@ -293,8 +294,7 @@ footer a {
           font: var(--header-extra-large);
           opacity: 1;
         }
-    }
-    
+    } 
 }
 
 @media screen and (min-width: 769px) {
@@ -323,13 +323,17 @@ footer a {
         border-radius: 200px;
     }
 
+    .sample {
+        max-width: 1920px;
+    }
+
     .sample h3 {
         font: var(--header-medium);
     }
 
     footer h4 {
         font: var(--header-medium);
-        width: 100%;
+        font-family: AtkinsonHyperlegible-Italic;
         margin: 10px 0px;
     }
     
@@ -341,9 +345,52 @@ footer a {
     }
     
     footer a {
-        color: var(--main-color);
         font: var(--nav-small);
         display: inline-block;
+        margin: 12px 12px;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    header {
+        justify-content: flex-end;
+    }
+    
+    nav {
+        margin-right: 25px;
+    }
+
+    p {
+        font: var(--body-extra-large);
+    }
+
+    #about-me img {
+        height: 300px;
+        border-radius: 250px;
+    }
+
+    #work {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .sample {
+        max-width: 1920px;
+        width: 45%;
+    }
+
+    .sample.large {
+        width: 85%;
+    }
+
+    footer h4 {
+        font: var(--header-large);
+        font-family: AtkinsonHyperlegible-Italic;
+        margin: 10px 0px;
+    }
+    
+    footer a {
+        font: var(--nav-medium);
         margin: 12px 12px;
     }
 }

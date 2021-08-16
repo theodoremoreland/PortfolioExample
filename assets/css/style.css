@@ -409,6 +409,53 @@ footer a {
     }
 
     p {
-       font: var(--body-extra-extra-large); 
+       font: var(--body-extra-extra-large);
+       margin: 20px 0px;
+    }
+}
+
+@media screen and (min-width: 1814px) {
+    #about-me img {
+        height: 400px;
+        border-radius: 300px;
+    }
+
+    .sample {
+        max-width: 1800px;
+    }
+}
+
+
+@media screen and (min-width: 3200px) {
+    nav li {
+        font: var(--body-extra-extra-large);
+    }
+
+    h2 {
+        font: var(--header-extra-large);
+    }
+
+    p {
+        font: var(--header-large);
+        font-family: AtkinsonHyperlegible;
+        margin: 30px 0px;
+    }
+
+    #about-me {
+        padding: 0px 150px;
+        min-height: 800px;
+    }
+
+    #about-me img {
+        height: 600px;
+        border-radius: 300px;
+    }
+
+    .sample {
+        max-width: 2600px;
+    }
+
+    footer {
+        margin-top: 200px;
     }
 }

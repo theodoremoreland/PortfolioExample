@@ -12,26 +12,26 @@ An example of a basic responsive portfolio website using only HTML and CSS.
 - CSS3
 - GitHub Pages
 
+# Future improvements
+* Update the design)
+
 # Screenshots
 
 ## Default view (Galaxy Fold emulation)
 <img src="presentation/1.PNG" width="250">
 
-## Default view (Galaxy Fold emulation)
+## Default view
 <img src="presentation/2.PNG" width="800">
 
-## Default view (Galaxy Fold emulation)
+## About me section
 <img src="presentation/3.PNG" width="800">
 
-## Default view (Galaxy Fold emulation)
+## Work section #1
 <img src="presentation/4.PNG" width="800">
 
-## Default view (Galaxy Fold emulation)
+## Work section #2
 <img src="presentation/5.PNG" width="800">
 
-## Default view (Galaxy Fold emulation)
+## Contact me section
 <img src="presentation/6.PNG" width="800">
-
-## Default view (Galaxy Fold emulation)
-<img src="presentation/7.PNG" width="800">
 

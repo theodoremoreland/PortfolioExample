@@ -1,20 +1,37 @@
 # Portfolio Example
-- Name
-- Recent photo or avatar
-- About me section
-- Previous Work section
-    - Presents previously deployed websites or placeholders for future deployments
-    - Each website presented on portfolio should have an image and title
-    - When you click on a presented website, it should take you to the website
-    - The first website featured should have a larger image than the others
-- Contact Info section
-- Navbar with skip links to each section
-- Website must be responsive using flexbox and media queries
-- Website must be deployed to live server
+An example of a basic responsive portfolio website using only HTML and CSS.
 
+# Features
+- Responsive w / mobile first design
+- CSS animations
+- Skip / jump links
+- Project samples
 
-- Repo must have numerous, detailed commit messages
-- Repo must have a detailed README
-    - README has screenshot of website
-    - README has description of website
-    - README has link to deployed website
+### Technologies used
+- HTML5
+- CSS3
+- GitHub Pages
+
+# Screenshots
+
+## Default view (Galaxy Fold emulation)
+<img src="presentation/1.PNG" width="250">
+
+## Default view (Galaxy Fold emulation)
+<img src="presentation/2.PNG" width="800">
+
+## Default view (Galaxy Fold emulation)
+<img src="presentation/3.PNG" width="800">
+
+## Default view (Galaxy Fold emulation)
+<img src="presentation/4.PNG" width="800">
+
+## Default view (Galaxy Fold emulation)
+<img src="presentation/5.PNG" width="800">
+
+## Default view (Galaxy Fold emulation)
+<img src="presentation/6.PNG" width="800">
+
+## Default view (Galaxy Fold emulation)
+<img src="presentation/7.PNG" width="800">
+

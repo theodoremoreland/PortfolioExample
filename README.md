@@ -13,7 +13,7 @@ An example of a basic responsive portfolio website using only HTML and CSS.
 - GitHub Pages
 
 # Future improvements
-* Update the design)
+* Update the design
 
 # Screenshots
 

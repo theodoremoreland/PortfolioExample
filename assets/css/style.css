@@ -35,9 +35,11 @@
 
     --footer-medium: 1rem AtkinsonHyperlegible;
 
-    --main-color: #ffffff;
+    --primary-color: #F8F8FF;
     --secondary-color: #405303;
-    --accent-color: #4A647A;
+    --tertiary-color: #4A647A;
+    --quaternary-color: #102D3D;
+    --quinary-color: #D4C6BB;
   }
 
 /* ------------------- GLOBAL ------------------- */
@@ -51,12 +53,14 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #D4C6BB;
+    background-image: linear-gradient(315deg, #102D3D 0%, #D4C6BB 74%);    
 }
 
 
 h2 {
     font: var(--header-large);
-    color: var(--accent-color);
+    color: var(--tertiary-color);
     margin-bottom: 20px;
 }
 
@@ -129,7 +133,7 @@ nav li {
     height: 350px;
     width: 100%;
     background-image: url("../images/missouri-river.jpg");
-    color: var(--main-color);
+    color: var(--primary-color);
 }
 
 #title {
@@ -228,10 +232,15 @@ article {
     margin: 0px 5px 20px 5px;
     width: 90%;
     max-width: 800px;
+    color: var(--primary-color);
+
+        
+
 }
 
 .project h3 {
     font: var(--header-small);
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4), 0px 8px 13px rgba(0,0,0,0.1), 0px 18px 23px rgba(0,0,0,0.1);
 }
 
 .project img {
@@ -258,8 +267,8 @@ footer {
     min-height: 180px;
     width: 100%;
     text-align: center;
-    color: var(--main-color);
-    background-color: var(--accent-color);
+    color: var(--primary-color);
+    background-color: var(--quaternary-color);
 }
 
 footer h4 {
@@ -276,7 +285,7 @@ footer ul {
 }
 
 footer a {
-    color: var(--main-color);
+    color: var(--primary-color);
     font: var(--nav-small);
     display: inline-block;
     margin: 12px 0px;

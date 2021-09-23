@@ -18,18 +18,22 @@
 /* ------------------- VARIABLES ------------------- */
 
 :root {
-    --header-extra-large: 2.8rem AtkinsonHyperlegible-Bold;
+    --header-xl: 2.8rem AtkinsonHyperlegible-Bold;
     --header-large: 2.25rem AtkinsonHyperlegible-Bold;
     --header-medium: 1.85rem AtkinsonHyperlegible-Bold;
     --header-small: 1.5rem AtkinsonHyperlegible-Italic;
-    --body-extra-extra-large: 1.8rem AtkinsonHyperlegible;
-    --body-extra-large: 1.5rem AtkinsonHyperlegible;
+
+    --body-xxl: 1.8rem AtkinsonHyperlegible;
+    --body-xl: 1.5rem AtkinsonHyperlegible;
     --body-large: 1.23rem AtkinsonHyperlegible;
     --body-medium: 1rem AtkinsonHyperlegible;
     --body-small: 0.9rem AtkinsonHyperlegible;
+
     --nav-medium: 1.6rem AtkinsonHyperlegible;
     --nav-small: 1.1rem AtkinsonHyperlegible;
+
     --footer-medium: 1rem AtkinsonHyperlegible;
+
     --main-color: #ffffff;
     --secondary-color: #405303;
     --accent-color: #4A647A;
@@ -115,6 +119,7 @@ nav li {
 
 #title {
     font: var(--header-medium);
+    mix-blend-mode: difference;
     animation: title 1.2s forwards linear;
 }
 
@@ -290,7 +295,7 @@ footer a {
         }
       
         to {
-          font: var(--header-extra-large);
+          font: var(--header-xl);
           opacity: 1;
         }
     } 
@@ -361,7 +366,7 @@ footer a {
     }
 
     p {
-        font: var(--body-extra-large);
+        font: var(--body-xl);
     }
 
     #about-me img {
@@ -409,7 +414,7 @@ footer a {
     }
 
     p {
-       font: var(--body-extra-extra-large);
+       font: var(--body-xxl);
        margin: 20px 0px;
     }
 }
@@ -428,11 +433,11 @@ footer a {
 
 @media screen and (min-width: 3200px) {
     nav li {
-        font: var(--body-extra-extra-large);
+        font: var(--body-xxl);
     }
 
     h2 {
-        font: var(--header-extra-large);
+        font: var(--header-xl);
     }
 
     p {

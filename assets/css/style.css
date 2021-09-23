@@ -40,6 +40,18 @@
   }
 
 /* ------------------- GLOBAL ------------------- */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 
 h2 {
     font: var(--header-large);
@@ -76,6 +88,7 @@ header {
     justify-content: center;
     background-color: rgba(100, 148, 237, 0);
     min-height: 90px;
+    width: 100%;
 }
 
 /* ------------------- NAV ------------------- */
@@ -85,6 +98,7 @@ nav {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
+    width: 100%;
 }
 
 nav a {
@@ -157,6 +171,7 @@ nav li {
 main {
     display: flex;
     flex-direction: column;
+    max-width: 1280px;
 }
 
 article {
@@ -240,6 +255,7 @@ footer {
     justify-content: center;
     align-items: center;
     min-height: 180px;
+    width: 100%;
     text-align: center;
     color: var(--main-color);
     background-color: var(--accent-color);
@@ -274,8 +290,11 @@ footer a {
 }
 
 @media screen and (min-width: 481px) {
+    main {
+        width: 80%;
+    }
+
     nav li {
-        font: var(--nav-medium);
         margin: 0px 15px;
     }
 
@@ -294,15 +313,19 @@ footer a {
         }
       
         to {
-          font: var(--header-xl);
+          font: var(--header-large);
           opacity: 1;
         }
     } 
 }
 
 @media screen and (min-width: 769px) {
+    nav {
+        justify-content: flex-end;
+    }
+
     p {
-        font: var(--body-large);
+        font: var(--body-medium);
     }
 
     #about-me {
@@ -364,10 +387,6 @@ footer a {
         margin-right: 25px;
     }
 
-    p {
-        font: var(--body-xl);
-    }
-
     #about-me img {
         height: 300px;
         border-radius: 250px;
@@ -413,17 +432,12 @@ footer a {
     }
 
     p {
-       font: var(--body-xxl);
+       font: var(--body-large);
        margin: 20px 0px;
     }
 }
 
 @media screen and (min-width: 1814px) {
-    #about-me img {
-        height: 400px;
-        border-radius: 300px;
-    }
-
     .project {
         max-width: 1800px;
     }
@@ -432,7 +446,7 @@ footer a {
 
 @media screen and (min-width: 3200px) {
     nav li {
-        font: var(--body-xxl);
+        font: var(--body-xl);
     }
 
     h2 {
@@ -440,7 +454,6 @@ footer a {
     }
 
     p {
-        font: var(--header-large);
         font-family: AtkinsonHyperlegible;
         margin: 30px 0px;
     }
@@ -450,16 +463,11 @@ footer a {
         min-height: 800px;
     }
 
-    #about-me img {
-        height: 600px;
-        border-radius: 300px;
-    }
-
     .project {
         max-width: 2600px;
     }
 
     footer {
-        margin-top: 200px;
+        margin-top: 50px;
     }
 }

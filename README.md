@@ -1,5 +1,5 @@
 # Portfolio Example
-An example of a basic responsive portfolio website using only HTML and CSS.
+An example of a basic, responsive portfolio website using only HTML and CSS.
 
 # Features
 - Responsive w / mobile first design

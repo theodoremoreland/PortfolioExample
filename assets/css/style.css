@@ -31,6 +31,7 @@
 
     --nav-medium: 1.6rem AtkinsonHyperlegible;
     --nav-small: 1.1rem AtkinsonHyperlegible;
+    --nav-xs: 0.9rem AtkinsonHyperlegible;
 
     --footer-medium: 1rem AtkinsonHyperlegible;
 
@@ -106,7 +107,7 @@ nav a {
 }
 
 nav li {
-    font: var(--nav-small);
+    font: var(--nav-xs);
     display: inline-block;
     margin: 0px 3px 0px 3px;
 }
@@ -197,7 +198,7 @@ article {
 }
 
 #about-me img {
-    height: 245px;
+    height: 200px;
     border-radius: 200px;
 }
 
@@ -216,7 +217,7 @@ article {
     width: 100%;
 }
 
-/* ------------------- SAMPLES ------------------- */
+/* ------------------- PROJECTS ------------------- */
 
 .project {
     display: flex;
@@ -355,11 +356,11 @@ footer a {
     }
 
     .project h3 {
-        font: var(--header-medium);
+        font: var(--header-small);
     }
 
     footer h4 {
-        font: var(--header-medium);
+        font: var(--header-small);
         font-family: AtkinsonHyperlegible-Italic;
         margin: 10px 0px;
     }
@@ -406,13 +407,11 @@ footer a {
     }
 
     footer h4 {
-        font: var(--header-large);
         font-family: AtkinsonHyperlegible-Italic;
         margin: 10px 0px;
     }
     
     footer a {
-        font: var(--nav-medium);
         margin: 12px 12px;
     }
 }

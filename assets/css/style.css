@@ -184,7 +184,7 @@ main > section, main > article {
 
 /* ------------------- WORK SECTION ------------------- */
 
-#work {
+#projects {
     flex: 1 1;
     justify-content: center;
     align-items: center;
@@ -193,7 +193,7 @@ main > section, main > article {
     margin-top: -20px;
 }
 
-#work > h2 {
+#projects > h2 {
     width: 100%;
 }
 
@@ -369,7 +369,7 @@ footer a {
         border-radius: 250px;
     }
 
-    #work {
+    #projects {
         flex-direction: row;
         flex-wrap: wrap;
     }

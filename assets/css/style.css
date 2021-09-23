@@ -427,7 +427,7 @@ footer a {
     }
 
     #about-me img {
-        height: 350px;
+        height: 300px;
         border-radius: 200px;
     }
 
@@ -436,13 +436,6 @@ footer a {
        margin: 20px 0px;
     }
 }
-
-@media screen and (min-width: 1814px) {
-    .project {
-        max-width: 1800px;
-    }
-}
-
 
 @media screen and (min-width: 3200px) {
     nav li {

@@ -291,6 +291,10 @@ footer a {
 }
 
 @media screen and (min-width: 481px) {
+    #hero-image-container {
+        height: 400px;
+    }
+
     main {
         width: 80%;
     }
@@ -300,7 +304,7 @@ footer a {
     }
 
     #about-me img {
-        height: 300px;
+        height: 250px;
         border-radius: 200px;
     }
 
@@ -345,11 +349,6 @@ footer a {
         justify-content: center;
         align-items: center;
     }
-    
-    #about-me img {
-        height: 245px;
-        border-radius: 200px;
-    }
 
     .project {
         max-width: 1000px;
@@ -389,7 +388,7 @@ footer a {
     }
 
     #about-me img {
-        height: 300px;
+        height: 225px;
         border-radius: 250px;
     }
 

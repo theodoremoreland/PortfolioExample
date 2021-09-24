@@ -280,6 +280,22 @@ footer ul {
     align-items: center;
 }
 
+footer li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+footer img {
+    width: 80px;
+}
+
+footer img#linkedin-logo {
+    margin-left: 13px;
+}
+
 footer a {
     color: var(--primary-color);
     font: var(--nav-small);

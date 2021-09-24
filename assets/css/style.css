@@ -286,6 +286,12 @@ footer li {
     justify-content: center;
     align-items: center;
     margin: 15px;
+    transition: transform 0.7s;
+}
+
+footer li:hover {
+    transform: scale(1.1);
+    text-decoration: underline;
 }
 
 footer img {

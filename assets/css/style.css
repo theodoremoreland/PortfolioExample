@@ -228,33 +228,29 @@ article {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center;
-    margin: 0px 5px 20px 5px;
     width: 90%;
     max-width: 800px;
+    margin: 0px 5px 20px 5px;
+    padding: 15px;
     color: var(--primary-color);
-
-        
-
+    text-align: center;
 }
 
 .project h3 {
     font: var(--header-small);
-    text-shadow: 0px 4px 3px rgba(0,0,0,0.4), 0px 8px 13px rgba(0,0,0,0.1), 0px 18px 23px rgba(0,0,0,0.1);
 }
 
 .project img {
     width: 100%;
-    border: 0.25px solid black;
-    transition: transform .2s;
+    border-radius: 8px;
 }
 
 .project.large {
     width: 100%;
 }
 
-.project img:hover {
-    transform: scale(1.025);
+.project:hover {
+    filter: brightness(1.1);
 }
 
 /* ------------------- FOOTER ------------------- */

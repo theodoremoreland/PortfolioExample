@@ -385,6 +385,10 @@ footer a {
         font: var(--header-small);
     }
 
+    footer {
+        min-height: 250px;
+    }
+
     footer h4 {
         font: var(--header-small);
         font-family: AtkinsonHyperlegible-Italic;

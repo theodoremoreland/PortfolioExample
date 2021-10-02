@@ -132,7 +132,7 @@ nav li {
     justify-content: center;
     height: 350px;
     width: 100%;
-    background-image: url("../images/missouri-river.jpg");
+    background-image: url("../images/missouri-river-small.jpg");
     color: var(--primary-color);
 }
 

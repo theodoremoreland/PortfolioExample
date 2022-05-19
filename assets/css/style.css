@@ -360,6 +360,10 @@ footer a {
         font: var(--body-medium);
     }
 
+    #hero-image-container {
+        background-image: url("../images/missouri-river.jpg");
+    }
+
     #about-me {
         flex-direction: row;
         justify-content: center;

@@ -13,7 +13,8 @@ An example of a basic, responsive portfolio website using only HTML and CSS.
 - GitHub Pages
 
 # Future improvements
-* Update the design
+* Add section(s) to display skill-set and/or certifications
+* Make LinkedIn and GitHub icons clickable (like accompanying text)
 
 # Screenshots
 

@@ -14,7 +14,6 @@ An example of a basic, responsive portfolio website using only HTML and CSS.
 
 # Future improvements
 * Add section(s) to display skill-set and/or certifications
-* Make LinkedIn and GitHub icons clickable (like accompanying text)
 
 # Screenshots
 

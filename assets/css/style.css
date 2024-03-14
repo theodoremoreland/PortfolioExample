@@ -1,39 +1,39 @@
 /* BASE DESIGN BASED ON APPEARANCE ON GALAXY FOLD (280px) */
 
 @font-face {
-  font-family: AtkinsonHyperlegible;
+  font-family: custom-regular;
   src: url("../fonts/AtkinsonHyperlegible-Regular.ttf");
 }
 
 @font-face {
-  font-family: AtkinsonHyperlegible-Bold;
+  font-family: custom-bold;
   src: url("../fonts/AtkinsonHyperlegible-Bold.ttf");
 }
 
 @font-face {
-  font-family: AtkinsonHyperlegible-Italic;
+  font-family: custom-italic;
   src: url("../fonts/AtkinsonHyperlegible-Italic.ttf");
 }
 
 /* ------------------- VARIABLES ------------------- */
 
 :root {
-  --header-xl: 2.8rem AtkinsonHyperlegible-Bold;
-  --header-large: 2.25rem AtkinsonHyperlegible-Bold;
-  --header-medium: 1.85rem AtkinsonHyperlegible-Bold;
-  --header-small: 1.5rem AtkinsonHyperlegible-Italic;
+  --header-xl: 2.8rem custom-bold;
+  --header-large: 2.25rem custom-bold;
+  --header-medium: 1.85rem custom-bold;
+  --header-small: 1.5rem custom-italic;
 
-  --body-xxl: 1.8rem AtkinsonHyperlegible;
-  --body-xl: 1.5rem AtkinsonHyperlegible;
-  --body-large: 1.23rem AtkinsonHyperlegible;
-  --body-medium: 1rem AtkinsonHyperlegible;
-  --body-small: 0.9rem AtkinsonHyperlegible;
+  --body-xxl: 1.8rem custom-regular;
+  --body-xl: 1.5rem custom-regular;
+  --body-large: 1.23rem custom-regular;
+  --body-medium: 1rem custom-regular;
+  --body-small: 0.9rem custom-regular;
 
-  --nav-medium: 1.6rem AtkinsonHyperlegible;
-  --nav-small: 1.1rem AtkinsonHyperlegible;
-  --nav-xs: 0.9rem AtkinsonHyperlegible;
+  --nav-medium: 1.6rem custom-regular;
+  --nav-small: 1.1rem custom-regular;
+  --nav-xs: 0.9rem custom-regular;
 
-  --footer-medium: 1rem AtkinsonHyperlegible;
+  --footer-medium: 1rem custom-regular;
 
   --primary-color: #f8f8ff;
   --secondary-color: #405303;
@@ -407,7 +407,7 @@ footer a {
 
   footer h4 {
     font: var(--header-small);
-    font-family: AtkinsonHyperlegible-Italic;
+    font-family: custom-italic;
     margin: 10px 0px;
   }
 
@@ -454,7 +454,7 @@ footer a {
   }
 
   footer h4 {
-    font-family: AtkinsonHyperlegible-Italic;
+    font-family: custom-italic;
     margin: 10px 0px;
   }
 
@@ -493,7 +493,7 @@ footer a {
   }
 
   p {
-    font-family: AtkinsonHyperlegible;
+    font-family: custom-regular;
     margin: 30px 0px;
   }
 

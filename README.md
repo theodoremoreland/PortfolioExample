@@ -4,7 +4,7 @@ An example of a rudimentary, responsive portfolio website using only HTML and CS
 
 <img src="presentation/2.PNG" width="800">
 
-_Note: This project was an assignment for Southern Methodist University's Full Stack Flex bootcamp (2021)_
+_Note: This project was an assignment for Southern Methodist University's Full Stack Flex bootcamp (2021)._
 
 ### Technologies used
 

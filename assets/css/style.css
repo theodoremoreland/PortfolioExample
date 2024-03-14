@@ -86,7 +86,7 @@ p {
 /* ------------------- NAV ------------------- */
 
 nav {
-  z-index: 3;
+  z-index: 4;
   position: fixed;
   top: 0;
   left: 0;
@@ -101,8 +101,9 @@ nav {
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
+nav,
 nav a {
-  color: var(--secondary-color);
+  color: lime;
 }
 
 nav ul {

@@ -155,13 +155,15 @@ nav li {
 
 #title {
   z-index: 3;
-  font: var(--header-medium);
+  font-family: custom-bold;
+  font-size: 7vw;
   animation: title 1.2s forwards linear;
 }
 
 #subtitle {
   z-index: 3;
-  font: var(--header-small);
+  font-family: custom-italic;
+  font-size: 3vw;
   opacity: 0;
   animation: subtitle 1.2s forwards linear;
   animation-delay: 1.2s;
@@ -174,7 +176,7 @@ nav li {
   }
 
   to {
-    font: var(--header-large);
+    font-size: 7vw;
     opacity: 1;
   }
 }
@@ -355,17 +357,6 @@ footer a {
 
   p {
     font: var(--body-medium);
-  }
-
-  @keyframes title {
-    from {
-      opacity: 0;
-    }
-
-    to {
-      font: var(--header-large);
-      opacity: 1;
-    }
   }
 }
 

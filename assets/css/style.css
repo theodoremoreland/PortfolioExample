@@ -310,7 +310,7 @@ footer li {
 }
 
 footer li:hover {
-  transform: scale(1.1);
+  filter: brightness(1.1);
   text-decoration: underline;
 }
 

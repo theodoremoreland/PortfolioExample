@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,27 +13,30 @@
         <link rel="stylesheet" href="assets/css/reset.css">
         <link rel="stylesheet" href="assets/css/style.css">
     </head>
+
     <body>
-        <header>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#about-me">About me</a>
-                    </li>
-                    /
-                    <li>
-                        <a href="#projects">Projects</a>
-                    </li>
-                    /
-                    <li>
-                        <a href="#contact-me">Contact me</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <div id="hero-image-container" class="parallax">
+        <nav>
+            <ul>
+                <li>
+                    <a href="#about-me">About me</a>
+                </li>
+                /
+                <li>
+                    <a href="#projects">Projects</a>
+                </li>
+                /
+                <li>
+                    <a href="#contact-me">Contact me</a>
+                </li>
+            </ul>
+        </nav>
+        <div id="hero-container">
             <h1 id="title">Theo Moreland</h1>
             <p id="subtitle">Software Engineer</p>
+            <video autoplay id="hero-video" loop muted>
+                <source src="assets/video/video1.mp4" type="video/mp4" />
+            </video>
+            <div id="overlay"></div>
         </div>
         <main>
             <article id="about-me">
@@ -41,17 +45,20 @@
                     <p>
                         I started programming in 2018 upon attending LaunchCode's free coding boot camp.
                         After my first few classes, I realized I had a passion for software development.
-                        Post graduation, I maintained my momentum by staying involved in programming academically and professionally.
+                        Post graduation, I maintained my momentum by staying involved in programming academically and
+                        professionally.
                     </p>
                     <p>
                         In 2019, I enrolled in a Bachelor's Degree program at Lindenwood University and a Data Analytics
                         boot camp at Washington University. After graduating my second coding boot camp, I went on to
-                        work as an IT Consultant at Daugherty Business Solutions. During my time at Daugherty, I contributed
-                        as a Data Engineer, Full Stack Developer, and Mobile Developer. 
+                        work as an IT Consultant at Daugherty Business Solutions. During my time at Daugherty, I
+                        contributed
+                        as a Data Engineer, Full Stack Developer, and Mobile Developer.
                     </p>
                     <p>
                         In between college classes and my work as an IT Consultant,
-                        I also worked as a Teaching Assistant across two coding bootcamps and three cohorts, twice as a TA for
+                        I also worked as a Teaching Assistant across two coding bootcamps and three cohorts, twice as a
+                        TA for
                         LaunchCode's Lc101, once as a TA for Southern Methodist University's Full Stack
                         Flex.
                     </p>
@@ -64,57 +71,67 @@
                 <h2>Projects</h2>
                 <section class="project large">
                     <a href="https://www.theodoremoreland.dev/" target="_blank">
-                        <img src="https://raw.githubusercontent.com/theodoremoreland/theodoremoreland.dev/master/presentation/thumbnail.png" alt="Thumbnail of portfolio website featuring wordcloud that doubles as a filter." />
+                        <img src="https://raw.githubusercontent.com/theodoremoreland/theodoremoreland.dev/master/presentation/thumbnail.png"
+                            alt="Thumbnail of portfolio website featuring wordcloud that doubles as a filter." />
                     </a>
                     <h3>
                         theodoremoreland.dev
                     </h3>
                     <p class="description">
-                        My personal portfolio website developed in React.js which leverages the GitHub API to dynamically render my 50+ public GitHub projects. 
+                        My personal portfolio website developed in React.js which leverages the GitHub API to
+                        dynamically render my 50+ public GitHub projects.
                     </p>
                 </section>
                 <section class="project">
                     <a href="https://main.dcbz4xkz1gclh.amplifyapp.com/#/movie-list" target="_blank">
-                        <img src="https://raw.githubusercontent.com/theodoremoreland/MyMovieList/main/presentation/thumbnail.png" alt="thumbnail for My Movie List" />
+                        <img src="https://raw.githubusercontent.com/theodoremoreland/MyMovieList/main/presentation/thumbnail.png"
+                            alt="thumbnail for My Movie List" />
                     </a>
                     <h3>
                         MyMovieList
                     </h3>
                     <p class="description">
-                        Browse, search, and add movies to a watch list. Features 34k+ movie titles from 1901 through 2017. 
+                        Browse, search, and add movies to a watch list. Features 34k+ movie titles from 1901 through
+                        2017.
                     </p>
                 </section>
                 <section class="project">
                     <a href="https://theodoremoreland.github.io/WeatherDashboard/" target="_blank">
-                        <img src="https://raw.githubusercontent.com/theodoremoreland/WeatherDashboard/main/presentation/thumbnail.png" alt="thumbnail image for Weather Dashboard" />
+                        <img src="https://raw.githubusercontent.com/theodoremoreland/WeatherDashboard/main/presentation/thumbnail.png"
+                            alt="thumbnail image for Weather Dashboard" />
                     </a>
                     <h3>
                         WeatherDashboard
                     </h3>
                     <p class="description">
-                        A webpage that generates a random password based on user selected criteria. Built using vanilla JavaScript w/ automated testing using Jest. 
+                        A webpage that generates a random password based on user selected criteria. Built using vanilla
+                        JavaScript w/ automated testing using Jest.
                     </p>
                 </section>
                 <section class="project">
                     <a href="https://master.d1wzvrnr7vhxf7.amplifyapp.com/" target="_blank">
-                        <img src="https://raw.githubusercontent.com/theodoremoreland/TypeRace/master/presentation/thumbnail.png" alt="Image of typing game." />
+                        <img src="https://raw.githubusercontent.com/theodoremoreland/TypeRace/master/presentation/thumbnail.png"
+                            alt="Image of typing game." />
                     </a>
                     <h3>
                         Type Race
                     </h3>
                     <p class="description">
-                        A typing game built in React.js. Tracks how quickly you can type a randomly selected quote fetched via REST API. 
+                        A typing game built in React.js. Tracks how quickly you can type a randomly selected quote
+                        fetched via REST API.
                     </p>
                 </section>
                 <section class="project">
                     <a href="https://theodoremoreland.github.io/JavaScriptQuiz/" target="_blank">
-                        <img src="https://raw.githubusercontent.com/theodoremoreland/JavaScriptQuiz/main/presentation/thumbnail.png" alt="Image of Code Quiz" />
+                        <img src="https://raw.githubusercontent.com/theodoremoreland/JavaScriptQuiz/main/presentation/thumbnail.png"
+                            alt="Image of Code Quiz" />
                     </a>
                     <h3>
                         JavaScript Quiz
                     </h3>
                     <p class="description">
-                        A timed, browser based JavaScript quiz. Built using vanilla JavaScript. Automated testing with Jest. 
+                        A timed, browser based JavaScript quiz. Built using vanilla JavaScript. Automated testing with
+                        Jest.
                     </p>
                 </section>
             </article>
@@ -137,4 +154,5 @@
             </ul>
         </footer>
     </body>
+
 </html>

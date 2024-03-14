@@ -160,6 +160,10 @@ nav li {
   font-size: 7vw;
   letter-spacing: 10px;
   animation: title 1.2s forwards linear;
+  color: lime;
+  text-shadow: 0 2px 2px #3bda01, -2px 5px 1px #3cbd01, -4px 8px 0px #0d9402,
+    -6px 11px 0px #206700, -8px 14px 0px #105402, -10px 17px 0px #1b4300,
+    -12px 20px 0px #171717, -14px 23px 0px #000;
 }
 
 #subtitle {
@@ -169,6 +173,7 @@ nav li {
   opacity: 0;
   animation: subtitle 1.2s forwards linear;
   animation-delay: 1.2s;
+  text-shadow: 0 2px 2px #3bda01, -2px 5px 1px #3cbd01;
 }
 
 /* keyframe animations which will be used to animate the title */

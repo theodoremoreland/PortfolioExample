@@ -157,6 +157,7 @@ nav li {
   z-index: 3;
   font-family: custom-bold;
   font-size: 7vw;
+  letter-spacing: 10px;
   animation: title 1.2s forwards linear;
 }
 

@@ -246,6 +246,7 @@ h2 {
 
 #projects {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -429,11 +430,6 @@ footer a {
   #about-me img {
     height: 225px;
     border-radius: 250px;
-  }
-
-  #projects {
-    flex-direction: row;
-    flex-wrap: wrap;
   }
 
   footer h4 {

@@ -294,8 +294,8 @@ footer {
   align-items: center;
   width: 100%;
   text-align: center;
-  color: var(--primary-color);
-  background-color: var(--quaternary-color);
+  color: lime;
+  background-color: black;
 }
 
 footer h4 {
@@ -316,7 +316,7 @@ footer li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 15px;
+  margin: 0;
   transition: transform 0.7s;
 }
 
@@ -326,7 +326,7 @@ footer li:hover {
 }
 
 footer img {
-  width: 80px;
+  width: 50px;
 }
 
 footer img#linkedin-logo {

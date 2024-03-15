@@ -75,6 +75,7 @@ a:hover {
 }
 
 p {
+  max-width: 75ch;
   font: var(--body-small);
   line-height: 1.5;
   text-justify: inter-word;
@@ -233,7 +234,6 @@ h2 {
 #about-me p {
   color: lime;
   text-align: left;
-  max-width: 75ch;
 }
 
 #about-me img {
@@ -260,8 +260,8 @@ h2 {
 .project {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: flex-start;
   color: var(--primary-color);
   text-align: center;
 }

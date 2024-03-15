@@ -54,8 +54,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #d4c6bb;
-  background-image: linear-gradient(315deg, #102d3d 0%, #d4c6bb 74%);
+  background-color: black;
 }
 
 h2 {
@@ -232,6 +231,7 @@ h2 {
 }
 
 #about-me p {
+  color: lime;
   text-align: left;
   max-width: 75ch;
 }
@@ -273,6 +273,7 @@ h2 {
 }
 
 .project .description {
+  color: lime;
   text-align: left;
   width: 100%;
   margin: 5px 0;

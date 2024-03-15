@@ -214,6 +214,18 @@ section {
   margin: 25px 0;
 }
 
+@media screen and (min-width: 1025px) {
+  section {
+    width: 55%;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  section {
+    width: 40%;
+  }
+}
+
 article {
   min-height: 250px;
   padding: 0;

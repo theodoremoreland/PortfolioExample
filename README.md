@@ -1,6 +1,6 @@
 # Portfolio Example
 
-An example of a rudimentary, responsive portfolio website using only HTML and CSS.
+An example of a rudimentary, responsive portfolio website using only HTML and CSS. This is not my actual portfolio, it was intended to function as an example for students of SMU's FSF course (2021).
 
 <img src="presentation/2.PNG" width="800">
 

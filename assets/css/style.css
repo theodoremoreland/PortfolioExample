@@ -158,6 +158,7 @@ nav li {
   font-family: custom-bold;
   font-size: 7vw;
   letter-spacing: 10px;
+  margin-right: -10px;
   animation: title 1.2s forwards linear;
   color: lime;
   text-shadow: 0 2px 2px #3bda01, -2px 5px 1px #3cbd01, -4px 8px 0px #0d9402,
@@ -168,7 +169,7 @@ nav li {
 #subtitle {
   z-index: 3;
   font-family: custom-italic;
-  font-size: 3vw;
+  font-size: 4vw;
   opacity: 0;
   animation: subtitle 1.2s forwards linear;
   animation-delay: 1.2s;

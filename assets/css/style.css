@@ -226,6 +226,7 @@ h2 {
 /* ------------------- ABOUT ME ARTICLE ------------------- */
 
 #about-me h2 {
+  text-shadow: 0 2px 2px #3bda01, -2px 5px 1px #3cbd01;
   text-align: left;
   margin-top: 16px;
 }
@@ -249,6 +250,7 @@ h2 {
 }
 
 #projects > h2 {
+  text-shadow: 0 2px 2px #3bda01, -2px 5px 1px #3cbd01;
   text-align: left;
   width: 100%;
 }
@@ -294,11 +296,12 @@ footer {
   align-items: center;
   width: 100%;
   text-align: center;
-  color: lime;
   background-color: black;
 }
 
 footer h4 {
+  color: white;
+  text-shadow: 0 2px 2px #3bda01, -2px 5px 1px #3cbd01;
   font: var(--header-small);
   width: 100%;
   margin: 10px 0px;

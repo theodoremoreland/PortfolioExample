@@ -248,7 +248,7 @@ h2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
 #projects > h2 {
@@ -282,7 +282,10 @@ h2 {
 }
 
 .project img {
+  /* Used in conjunction with ch unit to limit width. */
+  font: var(--body-large);
   width: 100%;
+  max-width: 75ch;
   border-radius: 8px;
 }
 

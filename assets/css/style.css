@@ -36,10 +36,6 @@
   --footer-medium: 1rem custom-regular;
 
   --primary-color: #f8f8ff;
-  --secondary-color: #405303;
-  --tertiary-color: #4a647a;
-  --quaternary-color: #102d3d;
-  --quinary-color: #d4c6bb;
 }
 
 /* ------------------- GLOBAL ------------------- */
@@ -60,6 +56,38 @@ body {
     deeppink -35%,
     #000001 24%
   );
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 2em;
+}
+
+section {
+  width: 75%;
+  padding: 0px 20px;
+  margin: 25px 0;
+}
+
+@media screen and (min-width: 1025px) {
+  section {
+    width: 55%;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  section {
+    width: 40%;
+  }
+}
+
+article {
+  min-height: 250px;
+  padding: 0;
+  margin: 0;
 }
 
 h2 {
@@ -219,41 +247,7 @@ nav li {
   }
 }
 
-/* ------------------- MAIN CONTAINER ------------------- */
-
-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  padding-bottom: 2em;
-}
-
-section {
-  width: 75%;
-  padding: 0px 20px;
-  margin: 25px 0;
-}
-
-@media screen and (min-width: 1025px) {
-  section {
-    width: 55%;
-  }
-}
-
-@media screen and (min-width: 1366px) {
-  section {
-    width: 40%;
-  }
-}
-
-article {
-  min-height: 250px;
-  padding: 0;
-  margin: 0;
-}
-
-/* ------------------- ABOUT ME ARTICLE ------------------- */
+/* ------------------- ABOUT ME ------------------- */
 
 #about-me {
   position: relative;
@@ -338,7 +332,7 @@ article {
   color: rgba(255, 255, 255, 0.685);
 }
 
-/* ------------------- PROJECTS ARTICLE ------------------- */
+/* ------------------- PROJECTS ------------------- */
 
 #projects {
   display: flex;

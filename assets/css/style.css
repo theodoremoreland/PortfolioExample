@@ -249,7 +249,18 @@ article {
 /* ------------------- ABOUT ME ARTICLE ------------------- */
 
 #about-me {
-  border-right: solid 1px deeppink;
+  position: relative;
+}
+
+#about-me::before {
+  z-index: 2;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-right: dotted 1px deeppink;
 }
 
 #about-me h2 {
@@ -269,7 +280,19 @@ article {
 /* ------------------- WORK EXPERIENCE ------------------- */
 
 #work-experience {
-  border-left: solid 1px deeppink;
+  position: relative;
+}
+
+#work-experience::before {
+  z-index: 2;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin-top: auto 0;
+  border-left: dotted 1px deeppink;
 }
 
 #work-experience ul {

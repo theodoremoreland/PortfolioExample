@@ -276,15 +276,17 @@ article {
 }
 
 #work-experience li .job-title {
-  color: white;
+  color: lime;
+  font-weight: bold;
 }
 
 #work-experience li .company {
-  color: lime;
+  color: white;
+  font-style: italic;
 }
 
 #work-experience li .date {
-  color: lime;
+  color: rgba(255, 255, 255, 0.685);
 }
 
 /* ------------------- PROJECTS ARTICLE ------------------- */

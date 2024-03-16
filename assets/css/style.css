@@ -453,11 +453,6 @@ footer a {
     margin: 0px 15px;
   }
 
-  #about-me img {
-    height: 250px;
-    border-radius: 200px;
-  }
-
   p {
     font: var(--body-medium);
   }
@@ -474,12 +469,6 @@ footer a {
 
   #about-me h2 {
     margin-top: 0px;
-  }
-
-  #about-me div:nth-child(2) {
-    order: 1;
-    justify-content: center;
-    align-items: center;
   }
 
   .project h3 {
@@ -515,11 +504,6 @@ footer a {
     margin-right: 25px;
   }
 
-  #about-me img {
-    height: 225px;
-    border-radius: 250px;
-  }
-
   footer h4 {
     font-family: custom-italic;
     margin: 10px 0px;
@@ -533,11 +517,6 @@ footer a {
 @media screen and (min-width: 1366px) {
   #hero-image-container {
     height: 600px;
-  }
-
-  #about-me img {
-    height: 300px;
-    border-radius: 200px;
   }
 
   p {

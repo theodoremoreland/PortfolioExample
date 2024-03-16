@@ -331,7 +331,8 @@ article {
   font: var(--body-large);
   width: 100%;
   max-width: 75ch;
-  border-radius: 8px;
+  margin-bottom: 20px;
+  border: dashed 1px lime;
 }
 
 .project:hover {

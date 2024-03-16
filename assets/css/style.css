@@ -59,7 +59,10 @@ body {
 
 h2 {
   font: var(--header-large);
+  text-shadow: 0 2px 2px #3bda01, -2px 5px 1px #3cbd01;
   color: white;
+  text-align: left;
+  margin: 20px 0px;
 }
 
 h3 {
@@ -232,15 +235,9 @@ article {
   margin: 0;
 }
 
-h2 {
-  margin: 20px 0px;
-}
-
 /* ------------------- ABOUT ME ARTICLE ------------------- */
 
 #about-me h2 {
-  text-shadow: 0 2px 2px #3bda01, -2px 5px 1px #3cbd01;
-  text-align: left;
   margin-top: 16px;
 }
 
@@ -254,6 +251,42 @@ h2 {
   border-radius: 200px;
 }
 
+/* ------------------- WORK EXPERIENCE ------------------- */
+
+#work-experience ul {
+  margin: 0;
+  padding: 0;
+}
+
+#work-experience li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  list-style: none;
+  margin: 10px 0;
+}
+
+#work-experience li > p {
+  padding: 0;
+  margin: 0;
+}
+
+#work-experience li .job-title {
+  color: white;
+}
+
+#work-experience li .company {
+  color: lime;
+}
+
+#work-experience li .date {
+  color: lime;
+}
+
 /* ------------------- PROJECTS ARTICLE ------------------- */
 
 #projects {
@@ -264,8 +297,6 @@ h2 {
 }
 
 #projects > h2 {
-  text-shadow: 0 2px 2px #3bda01, -2px 5px 1px #3cbd01;
-  text-align: left;
   width: 100%;
 }
 

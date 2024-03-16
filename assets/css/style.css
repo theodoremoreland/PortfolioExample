@@ -55,6 +55,11 @@ body {
   justify-content: center;
   align-items: center;
   background-color: black;
+  background: radial-gradient(
+    circle farthest-corner at bottom right,
+    deeppink -35%,
+    #000001 24%
+  );
 }
 
 h2 {

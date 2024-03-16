@@ -59,7 +59,7 @@ body {
 
 h2 {
   font: var(--header-large);
-  text-shadow: 0 2px 2px #3bda01, -2px 5px 1px #3cbd01;
+  text-shadow: 0 2px 2px deeppink, -2px 5px 1px rgb(194, 16, 111);
   color: white;
   text-align: left;
   margin: 20px 0px;
@@ -105,7 +105,7 @@ nav {
 
 nav,
 nav a {
-  color: lime;
+  color: deeppink;
 }
 
 nav ul {
@@ -144,6 +144,17 @@ nav li {
   width: 100%;
   object-fit: cover;
   object-position: bottom;
+  animation: video-fade-in 2s forwards linear;
+}
+
+@keyframes video-fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 #hero-video ~ #overlay {
@@ -162,11 +173,12 @@ nav li {
   font-size: 7vw;
   letter-spacing: 10px;
   margin-right: -10px;
-  animation: title 1.2s forwards linear;
-  color: lime;
-  text-shadow: 0 2px 2px #3bda01, -2px 5px 1px #3cbd01, -4px 8px 0px #0d9402,
-    -6px 11px 0px #206700, -8px 14px 0px #105402, -10px 17px 0px #1b4300,
+  color: deeppink;
+  text-shadow: 0 2px 2px rgb(238, 19, 136), -2px 5px 1px rgb(202, 16, 115),
+    -4px 8px 0px rgb(168, 14, 96), -6px 11px 0px rgb(131, 11, 75),
+    -8px 14px 0px rgb(104, 9, 59), -10px 17px 0px rgb(94, 8, 54),
     -12px 20px 0px #171717, -14px 23px 0px #000;
+  animation: title 1.2s forwards linear;
 }
 
 #subtitle {
@@ -174,12 +186,11 @@ nav li {
   font-family: custom-italic;
   font-size: 4vw;
   opacity: 0;
+  text-shadow: 0 2px 2px deeppink, -2px 5px 1px rgb(194, 16, 111);
   animation: subtitle 1.2s forwards linear;
   animation-delay: 1.2s;
-  text-shadow: 0 2px 2px #3bda01, -2px 5px 1px #3cbd01;
 }
 
-/* keyframe animations which will be used to animate the title */
 @keyframes title {
   from {
     opacity: 0;
@@ -237,12 +248,16 @@ article {
 
 /* ------------------- ABOUT ME ARTICLE ------------------- */
 
+#about-me {
+  border-right: solid 1px deeppink;
+}
+
 #about-me h2 {
   margin-top: 16px;
 }
 
 #about-me p {
-  color: lime;
+  color: deeppink;
   text-align: left;
 }
 
@@ -252,6 +267,10 @@ article {
 }
 
 /* ------------------- WORK EXPERIENCE ------------------- */
+
+#work-experience {
+  border-left: solid 1px deeppink;
+}
 
 #work-experience ul {
   margin: 0;
@@ -276,7 +295,7 @@ article {
 }
 
 #work-experience li .job-title {
-  color: lime;
+  color: deeppink;
   font-weight: bold;
 }
 
@@ -320,7 +339,7 @@ article {
 }
 
 .project .description {
-  color: lime;
+  color: deeppink;
   text-align: left;
   width: 100%;
   margin: 5px 0;
@@ -332,10 +351,10 @@ article {
   width: 100%;
   max-width: 75ch;
   margin-bottom: 20px;
-  border: double 1px rgba(0, 255, 0, 0.4);
-  box-shadow: rgba(0, 255, 0, 0.4) 0px 5px, rgba(0, 255, 0, 0.3) 0px 10px,
-    rgba(0, 255, 0, 0.2) 0px 15px, rgba(0, 255, 0, 0.1) 0px 20px,
-    rgba(0, 255, 0, 0.05) 0px 25px;
+  border: double 1px rgba(255, 20, 145, 0.4);
+  box-shadow: rgba(255, 20, 145, 0.4) 0px 5px, rgba(255, 20, 145, 0.3) 0px 10px,
+    rgba(255, 20, 145, 0.2) 0px 15px, rgba(255, 20, 145, 0.1) 0px 20px,
+    rgba(255, 20, 145, 0.05) 0px 25px;
 }
 
 .project:hover {
@@ -356,7 +375,7 @@ footer {
 
 footer h4 {
   color: white;
-  text-shadow: 0 2px 2px #3bda01, -2px 5px 1px #3cbd01;
+  text-shadow: 0 2px 2px deeppink, -2px 5px 1px rgb(194, 16, 111);
   font: var(--header-small);
   width: 100%;
   margin: 10px 0px;
@@ -428,12 +447,6 @@ footer a {
 
   p {
     font: var(--body-medium);
-  }
-
-  #about-me {
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
   }
 
   #about-me h2 {

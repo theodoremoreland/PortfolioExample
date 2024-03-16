@@ -393,7 +393,7 @@ footer {
   align-items: center;
   width: 100%;
   text-align: center;
-  background-color: black;
+  background-color: #2a195e;
 }
 
 footer h4 {
@@ -406,9 +406,10 @@ footer h4 {
 
 footer ul {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  gap: 20px;
 }
 
 footer li {
@@ -479,13 +480,6 @@ footer a {
     font: var(--header-small);
     font-family: custom-italic;
     margin: 10px 0px;
-  }
-
-  footer ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
   }
 
   footer a {

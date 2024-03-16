@@ -22,21 +22,21 @@ This project was a homework assignment near the beginning of Southern Methodist 
 
 The assignment requirements went as follows:
 
-    - Displays your name
-    - Displays a recent photo of yourself or an avatar
-    - Must have an `About me` section
-    - Must have a `Previous work` section
-        - Presents previously deployed websites or placeholders for future deployments
-        - Each website presented on portfolio should have an image and title
-        - When you click on a presented website, it should take you to the website
-        - The first website featured should have a larger image than the others
-    - Must have a `Contact info` section
-    - Website must be deployed to live server
-    - Website must be responsive using flexbox and media queries
-    - Project GitHub repository must have a detailed README
-        - README has screenshot of website
-        - README has description of website
-        - README has link to deployed website
+- Displays your name
+- Displays a recent photo of yourself or an avatar
+- Must have an `About me` section
+- Must have a `Previous work` section
+  - Presents previously deployed websites or placeholders for future deployments
+  - Each website presented on portfolio should have an image and title
+  - When you click on a presented website, it should take you to the website
+  - The first website featured should have a larger image than the others
+- Must have a `Contact info` section
+- Website must be deployed to live server
+- Website must be responsive using flexbox and media queries
+- Project GitHub repository must have a detailed README
+  - README has screenshot of website
+  - README has description of website
+  - README has link to deployed website
 
 ## Technologies used
 

@@ -332,7 +332,10 @@ article {
   width: 100%;
   max-width: 75ch;
   margin-bottom: 20px;
-  border: dashed 1px lime;
+  border: double 1px rgba(0, 255, 0, 0.4);
+  box-shadow: rgba(0, 255, 0, 0.4) 0px 5px, rgba(0, 255, 0, 0.3) 0px 10px,
+    rgba(0, 255, 0, 0.2) 0px 15px, rgba(0, 255, 0, 0.1) 0px 20px,
+    rgba(0, 255, 0, 0.05) 0px 25px;
 }
 
 .project:hover {

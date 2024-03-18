@@ -336,9 +336,15 @@ nav li {
 
 #photos #photo-grid {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto;
   gap: 25px;
   margin: 20px 0;
+}
+
+@media screen and (min-width: 768px) {
+  #photos #photo-grid {
+    grid-template-columns: auto auto;
+  }
 }
 
 #photo-grid > div {

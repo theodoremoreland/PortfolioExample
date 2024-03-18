@@ -349,6 +349,10 @@ nav li {
   width: 60%;
 }
 
+#skills #docker .level {
+  width: 40%;
+}
+
 #skills #sql .level {
   width: 40%;
 }
@@ -359,6 +363,10 @@ nav li {
 
 #skills #git .level {
   width: 40%;
+}
+
+#skills #dsa .level {
+  width: 20%;
 }
 
 /* ------------------- WORK EXPERIENCE ------------------- */

@@ -337,7 +337,12 @@ nav li {
 #photos img {
   width: 100%;
   aspect-ratio: 16/9;
-  border: outset 8px rgba(255, 20, 145, 0.4);
+  border: dashed 3px rgba(255, 20, 145, 0.4);
+  transition: scale 0.5s ease-in-out;
+}
+
+#photos img:hover {
+  scale: 3;
 }
 
 #photos #photos-container {

@@ -366,6 +366,11 @@ nav li {
   font: var(--nav-xs);
   color: white;
   background-color: black;
+  background: radial-gradient(
+    circle farthest-corner at top left,
+    #ff149394 -30%,
+    #000001 65%
+  );
 }
 
 #photos img {

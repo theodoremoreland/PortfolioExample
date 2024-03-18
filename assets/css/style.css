@@ -58,6 +58,18 @@ body {
   );
 }
 
+body::-webkit-scrollbar {
+  width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #2a195e; /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(190, 190, 190); /* color of the scroll thumb */
+}
+
 main {
   display: flex;
   flex-direction: column;

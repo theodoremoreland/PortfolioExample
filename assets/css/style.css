@@ -334,14 +334,14 @@ nav li {
 
 /* ------------------- PHOTOS ------------------- */
 
-#photos #photos-container {
+#photos #photo-grid {
   display: grid;
   grid-template-columns: auto auto;
   gap: 25px;
   margin: 20px 0;
 }
 
-#photos-container > div {
+#photo-grid > div {
   position: relative;
   border: inset 3px rgba(255, 20, 145, 0.4);
   box-shadow: rgba(255, 20, 145, 0.4) 0px 5px, rgba(255, 20, 145, 0.3) 0px 10px,
@@ -350,12 +350,12 @@ nav li {
   transition: scale 0.2s ease-in-out;
 }
 
-#photos-container > div:hover {
+#photo-grid > div:hover {
   z-index: 3;
   scale: 2.5;
 }
 
-#photos span {
+#photos .label {
   box-sizing: border-box;
   position: absolute;
   bottom: 0;

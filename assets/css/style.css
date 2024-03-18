@@ -334,9 +334,15 @@ nav li {
 
 /* ------------------- PHOTOS ------------------- */
 
-#photos img {
-  width: 100%;
-  aspect-ratio: 16/9;
+#photos #photos-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 25px;
+  margin: 20px 0;
+}
+
+#photos-container > div {
+  position: relative;
   border: inset 3px rgba(255, 20, 145, 0.4);
   box-shadow: rgba(255, 20, 145, 0.4) 0px 5px, rgba(255, 20, 145, 0.3) 0px 10px,
     rgba(255, 20, 145, 0.2) 0px 15px, rgba(255, 20, 145, 0.1) 0px 20px,
@@ -344,15 +350,28 @@ nav li {
   transition: scale 0.2s ease-in-out;
 }
 
-#photos img:hover {
+#photos-container > div:hover {
+  z-index: 3;
   scale: 2.5;
 }
 
-#photos #photos-container {
-  display: grid;
-  grid-template-columns: auto auto;
-  gap: 25px;
-  margin: 20px 0;
+#photos span {
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  padding: 0.5em 1em;
+  font-family: custom-regular;
+  color: white;
+  background-color: black;
+}
+
+#photos img {
+  box-sizing: border-box;
+  width: 100%;
+  aspect-ratio: 16/9;
 }
 
 /* ------------------- PROJECTS ------------------- */

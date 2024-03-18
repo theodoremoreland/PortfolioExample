@@ -343,6 +343,10 @@ nav li {
 
 #photo-grid > div {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
   border: inset 3px rgba(255, 20, 145, 0.4);
   box-shadow: rgba(255, 20, 145, 0.4) 0px 5px, rgba(255, 20, 145, 0.3) 0px 10px,
     rgba(255, 20, 145, 0.2) 0px 15px, rgba(255, 20, 145, 0.1) 0px 20px,
@@ -357,10 +361,8 @@ nav li {
 
 #photos .label {
   box-sizing: border-box;
-  position: absolute;
-  bottom: 0;
-  left: 0;
   display: block;
+  flex-grow: 1;
   width: 100%;
   padding: 0.5em 1em;
   font: var(--nav-xs);

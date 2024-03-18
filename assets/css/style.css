@@ -347,6 +347,12 @@ nav li {
   }
 }
 
+@media screen and (min-width: 1920px) {
+  #photos #photo-grid {
+    grid-template-columns: auto auto auto;
+  }
+}
+
 #photo-grid > div {
   position: relative;
   display: flex;

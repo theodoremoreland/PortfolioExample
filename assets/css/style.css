@@ -331,38 +331,110 @@ nav li {
 
 #skills #javascript .level {
   width: 80%;
+  animation: slide-advanced 0.5s ease;
+  animation-timeline: view();
+  animation-range-start: 0px;
+  animation-range-end: 200px;
 }
 
 #skills #react .level {
   width: 60%;
+  animation: slide-intermediate 0.5s ease;
+  animation-timeline: view();
+  animation-range-start: 0px;
+  animation-range-end: 200px;
 }
 
 #skills #python .level {
   width: 60%;
+  animation: slide-intermediate 0.5s ease;
+  animation-timeline: view();
+  animation-range-start: 0px;
+  animation-range-end: 200px;
 }
 
 #skills #typescript .level {
   width: 60%;
+  animation: slide-intermediate 0.5s ease;
+  animation-timeline: view();
+  animation-range-start: 0px;
+  animation-range-end: 200px;
 }
 
 #skills #aws .level {
   width: 60%;
+  animation: slide-intermediate 0.5s ease;
+  animation-timeline: view();
+  animation-range-start: 0px;
+  animation-range-end: 200px;
 }
 
 #skills #docker .level {
   width: 40%;
+  animation: slide-pro-beginner 0.5s ease;
+  animation-timeline: view();
+  animation-range-start: 0px;
+  animation-range-end: 200px;
 }
 
 #skills #sql .level {
   width: 40%;
+  animation: slide-pro-beginner 0.5s ease;
+  animation-timeline: view();
+  animation-range-start: 0px;
+  animation-range-end: 200px;
 }
 
 #skills #css .level {
   width: 60%;
+  animation: slide-intermediate 0.5s ease;
+  animation-timeline: view();
+  animation-range-start: 0px;
+  animation-range-end: 200px;
 }
 
 #skills #git .level {
   width: 40%;
+  animation: slide-pro-beginner 0.5s ease;
+  animation-timeline: view();
+  animation-range-start: 0px;
+  animation-range-end: 200px;
+}
+
+@keyframes slide-advanced {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 80%;
+  }
+}
+
+@keyframes slide-intermediate {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 60%;
+  }
+}
+
+@keyframes slide-pro-beginner {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 40%;
+  }
+}
+
+@keyframes slide-beginner {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 20%;
+  }
 }
 
 /* ------------------- WORK EXPERIENCE ------------------- */

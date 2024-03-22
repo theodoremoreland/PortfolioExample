@@ -15,6 +15,7 @@ _Note: This project was an assignment for Southern Methodist University's Full S
 - [How to run](#how-to-run)
 - [Screenshots](#screenshots)
   - [Desktop](#desktop)
+  - [Mobile](#mobile)
 
 ## Overview
 

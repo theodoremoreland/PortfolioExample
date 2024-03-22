@@ -53,4 +53,20 @@ The assignment requirements went as follows:
 
 ### Desktop
 
-<img src="presentation/thumbnail.png" width="800">
+<img src="https://dj8eg5xs13hf6.cloudfront.net/portfolio-example/thumbnail.png" width="800">
+
+<img src="https://dj8eg5xs13hf6.cloudfront.net/portfolio-example/1.png" width="800">
+
+<img src="https://dj8eg5xs13hf6.cloudfront.net/portfolio-example/2.png" width="800">
+
+<img src="https://dj8eg5xs13hf6.cloudfront.net/portfolio-example/3.png" width="800">
+
+<img src="https://dj8eg5xs13hf6.cloudfront.net/portfolio-example/4.png" width="800">
+
+<img src="https://dj8eg5xs13hf6.cloudfront.net/portfolio-example/5.png" width="800">
+
+<img src="https://dj8eg5xs13hf6.cloudfront.net/portfolio-example/6.png" width="800">
+
+<img src="https://dj8eg5xs13hf6.cloudfront.net/portfolio-example/7.png" width="800">
+
+<img src="https://dj8eg5xs13hf6.cloudfront.net/portfolio-example/8.png" width="800">

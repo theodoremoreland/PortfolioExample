@@ -53,20 +53,38 @@ The assignment requirements went as follows:
 
 ### Desktop
 
+#### Hero video
+
 <img src="https://dj8eg5xs13hf6.cloudfront.net/portfolio-example/thumbnail.png" width="800">
+
+#### About me section
 
 <img src="https://dj8eg5xs13hf6.cloudfront.net/portfolio-example/1.png" width="800">
 
+#### Skills section
+
 <img src="https://dj8eg5xs13hf6.cloudfront.net/portfolio-example/2.png" width="800">
+
+#### Work experience section
 
 <img src="https://dj8eg5xs13hf6.cloudfront.net/portfolio-example/3.png" width="800">
 
+#### Projects section
+
 <img src="https://dj8eg5xs13hf6.cloudfront.net/portfolio-example/4.png" width="800">
+
+#### Projects section 2
 
 <img src="https://dj8eg5xs13hf6.cloudfront.net/portfolio-example/5.png" width="800">
 
+#### Projects section 3
+
 <img src="https://dj8eg5xs13hf6.cloudfront.net/portfolio-example/6.png" width="800">
 
+#### Projects section 4
+
 <img src="https://dj8eg5xs13hf6.cloudfront.net/portfolio-example/7.png" width="800">
+
+#### Photos and Socials
 
 <img src="https://dj8eg5xs13hf6.cloudfront.net/portfolio-example/8.png" width="800">

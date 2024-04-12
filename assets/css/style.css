@@ -590,19 +590,27 @@ nav li {
   width: 100%;
 }
 
+#projects > div {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
+}
+
+@media screen and (min-width: 768px) {
+  #projects > div {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 /* ------------------- PROJECTS ------------------- */
 
 .project {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-start;
   color: var(--primary-color);
   text-align: center;
-}
-
-.project:not(:first-of-type) {
-  margin-top: 2.5em;
 }
 
 .project .name {
@@ -615,14 +623,13 @@ nav li {
   color: deeppink;
   text-align: left;
   width: 100%;
-  margin: 5px 0;
+  margin: 0;
 }
 
 .project img {
   /* Used in conjunction with ch unit to limit width. */
   font: var(--body-large);
   width: 100%;
-  max-width: 75ch;
   aspect-ratio: 4/3;
   margin-bottom: 20px;
   border: double 1px rgba(255, 20, 145, 0.4);

@@ -82,6 +82,7 @@ main {
 
 section {
   width: 75%;
+  max-width: 1000px;
   padding: 0px 20px;
   margin: 25px 0;
 }

@@ -74,68 +74,56 @@ The assignment requirements went as follows:
 
 <img src="https://dj8eg5xs13hf6.cloudfront.net/portfolio-example/4.png" width="800">
 
-#### Projects section 2
-
-<img src="https://dj8eg5xs13hf6.cloudfront.net/portfolio-example/5.png" width="800">
-
-#### Projects section 3
-
-<img src="https://dj8eg5xs13hf6.cloudfront.net/portfolio-example/6.png" width="800">
-
-#### Projects section 4
-
-<img src="https://dj8eg5xs13hf6.cloudfront.net/portfolio-example/7.png" width="800">
-
 #### Photos and Socials
 
-<img src="https://dj8eg5xs13hf6.cloudfront.net/portfolio-example/8.png" width="800">
+<img src="https://dj8eg5xs13hf6.cloudfront.net/portfolio-example/5.png" width="800">
 
 ### Mobile
 
 #### Hero video
 
-<img src="https://dj8eg5xs13hf6.cloudfront.net/portfolio-example/9.png" width="300">
+<img src="https://dj8eg5xs13hf6.cloudfront.net/portfolio-example/6.png" width="300">
 
 #### About me section
 
-<img src="https://dj8eg5xs13hf6.cloudfront.net/portfolio-example/10.png" width="300">
+<img src="https://dj8eg5xs13hf6.cloudfront.net/portfolio-example/7.png" width="300">
 
 #### Skills section
 
-<img src="https://dj8eg5xs13hf6.cloudfront.net/portfolio-example/11.png" width="300">
+<img src="https://dj8eg5xs13hf6.cloudfront.net/portfolio-example/8.png" width="300">
 
 #### Work experience section
 
-<img src="https://dj8eg5xs13hf6.cloudfront.net/portfolio-example/12.png" width="300">
+<img src="https://dj8eg5xs13hf6.cloudfront.net/portfolio-example/9.png" width="300">
 
 #### Projects section
 
-<img src="https://dj8eg5xs13hf6.cloudfront.net/portfolio-example/13.png" width="300">
+<img src="https://dj8eg5xs13hf6.cloudfront.net/portfolio-example/10.png" width="300">
 
 #### Projects section 2
 
-<img src="https://dj8eg5xs13hf6.cloudfront.net/portfolio-example/14.png" width="300">
+<img src="https://dj8eg5xs13hf6.cloudfront.net/portfolio-example/11.png" width="300">
 
 #### Projects section 3
 
-<img src="https://dj8eg5xs13hf6.cloudfront.net/portfolio-example/15.png" width="300">
+<img src="https://dj8eg5xs13hf6.cloudfront.net/portfolio-example/12.png" width="300">
 
 #### Projects section 4
 
-<img src="https://dj8eg5xs13hf6.cloudfront.net/portfolio-example/16.png" width="300">
+<img src="https://dj8eg5xs13hf6.cloudfront.net/portfolio-example/13.png" width="300">
 
 #### Photos section
 
-<img src="https://dj8eg5xs13hf6.cloudfront.net/portfolio-example/17.png" width="300">
+<img src="https://dj8eg5xs13hf6.cloudfront.net/portfolio-example/14.png" width="300">
 
 #### Projects section 2
 
-<img src="https://dj8eg5xs13hf6.cloudfront.net/portfolio-example/18.png" width="300">
+<img src="https://dj8eg5xs13hf6.cloudfront.net/portfolio-example/15.png" width="300">
 
 #### Projects section 3
 
-<img src="https://dj8eg5xs13hf6.cloudfront.net/portfolio-example/19.png" width="300">
+<img src="https://dj8eg5xs13hf6.cloudfront.net/portfolio-example/16.png" width="300">
 
 #### Socials section
 
-<img src="https://dj8eg5xs13hf6.cloudfront.net/portfolio-example/20.png" width="300">
+<img src="https://dj8eg5xs13hf6.cloudfront.net/portfolio-example/17.png" width="300">

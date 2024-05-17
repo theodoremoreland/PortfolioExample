@@ -4,7 +4,7 @@ An example of a rudimentary, responsive portfolio website using only HTML and CS
 
 [View the website live](https://theodoremoreland.github.io/PortfolioExample/)
 
-<img src="presentation/thumbnail.png" width="800">
+<img src="presentation/thumbnail.png" width="650">
 
 _Note: This project was an assignment for Southern Methodist University's Full Stack Flex bootcamp (2021)._
 

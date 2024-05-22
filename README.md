@@ -116,11 +116,11 @@ The assignment requirements went as follows:
 
 <img src="https://dj8eg5xs13hf6.cloudfront.net/portfolio-example/14.png" width="250">
 
-#### Projects section 2
+#### Photos section 2
 
 <img src="https://dj8eg5xs13hf6.cloudfront.net/portfolio-example/15.png" width="250">
 
-#### Projects section 3
+#### Photos section 3
 
 <img src="https://dj8eg5xs13hf6.cloudfront.net/portfolio-example/16.png" width="250">
 

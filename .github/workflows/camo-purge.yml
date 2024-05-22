@@ -3,7 +3,7 @@ name: Camo Purge
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   Camo-Purge:

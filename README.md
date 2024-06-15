@@ -19,7 +19,7 @@ _Note: This project was an assignment for Southern Methodist University's Full S
 
 ## Overview
 
-This project was a homework assignment near the beginning of Southern Methodist University's Full Stack Flex course (2021). The project was designed to exercise the fundamentals of responsive HTML & CSS in addition to serving as a template for a project portfolio.
+This project was a homework assignment near the beginning of Southern Methodist University's Full Stack Flex course (2021). The project was designed to exercise the fundamentals of responsive HTML & CSS in addition to serving as a basis for a project portfolio that can be built upon throughout the course.
 
 The assignment requirements went as follows:
 

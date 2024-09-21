@@ -44,6 +44,7 @@ The assignment requirements went as follows:
 - HTML5
 - CSS3
 - GitHub Pages
+- Text Studio (stylized text for title and subtitle via [Font Generator](https://www.textstudio.com/))
 
 ## How to run
 

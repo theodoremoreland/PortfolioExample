@@ -5,20 +5,23 @@
 }
 
 .layers::before,
-.layers::after {
+.layers::after a:hover::before,
+a:hover::after {
   content: attr(data-text);
   position: absolute;
   width: 110%;
   z-index: -1;
 }
 
-.layers::before {
+.layers::before,
+a:hover::before {
   top: 10px;
   left: 15px;
   color: #e0287d;
 }
 
-.layers::after {
+.layers::after,
+a:hover::after {
   top: 5px;
   left: -10px;
   color: #1bc7fb;
@@ -378,16 +381,19 @@
   }
 }
 
-.glitch span {
+.glitch span,
+a:hover span {
   animation: paths 5s step-end infinite;
 }
 
-.glitch::before {
+.glitch::before,
+a:hover::before {
   animation: paths 5s step-end infinite, opacity 5s step-end infinite,
     font 8s step-end infinite, movement 10s step-end infinite;
 }
 
-.glitch::after {
+.glitch::after,
+a:hover::after {
   animation: paths 5s step-end infinite, opacity 5s step-end infinite,
     font 7s step-end infinite, movement 8s step-end infinite;
 }

@@ -45,6 +45,7 @@ The assignment requirements went as follows:
 - CSS3
 - GitHub Pages
 - Text Studio (stylized text for title and subtitle via [Font Generator](https://www.textstudio.com/))
+- Codepen (specifically for glitch effect of h2 elements via user [Matt Gross](https://codepen.io/mattgrosswork))
 
 ## How to run
 

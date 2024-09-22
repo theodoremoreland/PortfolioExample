@@ -12,6 +12,7 @@ _Note: This project was an assignment for Southern Methodist University's Full S
 
 - [Overview](#overview)
 - [Technologies used](#technologies-used)
+- [Attributions](#attributions)
 - [How to run](#how-to-run)
 - [Screenshots](#screenshots)
   - [Desktop](#desktop)
@@ -30,8 +31,8 @@ The assignment requirements went as follows:
   - Presents previously deployed websites or placeholders for future deployments
   - Each website presented on portfolio should have an image and title
   - When you click on a presented website, it should take you to the website
-  - The first website featured should have a larger image than the others
-- Must have a `Contact info` section
+  - The first website featured should have a larger image than the others *(I opted not to comply with this requirement on my most recent version)*
+- Must have a `Contact info` section *(I preferred to limit contact info to professional "social media" accounts e.g. LinkedIn, GitHub, etc...)*
 - Website must be deployed to live server
 - Website must be responsive using flexbox and media queries
 - Project GitHub repository must have a detailed README

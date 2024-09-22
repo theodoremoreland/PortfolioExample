@@ -27,7 +27,7 @@ The assignment requirements went as follows:
 - Displays your name
 - Displays a recent photo of yourself or an avatar
 - Must have an `About me` section
-- Must have a `Previous work` section
+- Must have a `Previous work` section *(I chose to name this section "Projects")*
   - Presents previously deployed websites or placeholders for future deployments
   - Each website presented on portfolio should have an image and title
   - When you click on a presented website, it should take you to the website

@@ -218,7 +218,7 @@ nav li {
 
 #title {
   z-index: 3;
-  width: 95%;
+  width: 100%;
   margin-right: -10px;
   animation: title 1.2s forwards linear;
 }
@@ -226,7 +226,7 @@ nav li {
 #subtitle {
   z-index: 3;
   margin-top: -9%;
-  width: 65%;
+  width: 75%;
   opacity: 0;
   animation: subtitle 1.2s forwards linear;
   animation-delay: 1.2s;

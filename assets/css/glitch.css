@@ -1,11 +1,13 @@
 /* The following styles are not my own. Source: https://codepen.io/mattgrosswork/pen/VwprebG */
 
-.layers {
+.layers,
+a:hover {
   position: relative;
 }
 
 .layers::before,
-.layers::after a:hover::before,
+.layers::after,
+a:hover::before,
 a:hover::after {
   content: attr(data-text);
   position: absolute;

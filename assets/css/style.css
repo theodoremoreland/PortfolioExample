@@ -258,6 +258,7 @@ nav li {
 @media screen and (min-width: 2660px) {
   #title {
     width: 70%;
+    margin-top: -5%;
   }
 
   #subtitle {

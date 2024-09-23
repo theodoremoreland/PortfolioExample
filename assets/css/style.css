@@ -234,12 +234,23 @@ nav li {
 
 @media screen and (min-width: 768px) {
   #title {
-    width: 89%;
+    width: 85%;
   }
 
   #subtitle {
-    margin-top: -8%;
-    width: 48%;
+    margin-top: -7%;
+    width: 44%;
+  }
+}
+
+@media screen and (min-width: 2660px) {
+  #title {
+    width: 70%;
+  }
+
+  #subtitle {
+    margin-top: -5%;
+    width: 30%;
   }
 }
 

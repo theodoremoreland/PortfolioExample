@@ -175,6 +175,10 @@ nav li {
 }
 
 @media screen and (min-width: 1366px) {
+  nav {
+    font: var(--nav-medium);
+  }
+
   nav li {
     font: var(--nav-medium);
   }
@@ -183,6 +187,7 @@ nav li {
 @media screen and (min-width: 2660px) {
   nav li {
     font: var(--body-xl);
+    margin: 0px 20px;
   }
 }
 

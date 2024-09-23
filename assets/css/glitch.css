@@ -308,10 +308,6 @@ a:hover::after {
   }
 }
 
-.opacity {
-  animation: opacity 5s step-end infinite;
-}
-
 @keyframes opacity {
   0% {
     opacity: 0.1;
@@ -345,10 +341,6 @@ a:hover::after {
   93% {
     opacity: 0;
   }
-}
-
-.font {
-  animation: font 7s step-end infinite;
 }
 
 @keyframes font {

@@ -27,18 +27,19 @@
   top: 0;
   bottom: 0;
   background-repeat: no-repeat;
-  background-color: rgb(3, 159, 0);
   background-position: 0 0;
-  opacity: 0.05;
+  opacity: 0.1;
 }
 
 .scanlines__layer:nth-child(1) {
   transform: translateX(-5%);
+  background-color: rgb(3, 159, 0);
   animation: glitch-anim-1 2s infinite linear alternate;
 }
 
 .scanlines__layer:nth-child(2) {
   transform: translateX(3%) translateY(3%);
+  background-color: rgb(2, 24, 190);
   animation: glitch-anim-2 2.5s -0.8s infinite linear alternate;
 }
 

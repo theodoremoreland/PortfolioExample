@@ -2,17 +2,17 @@
 
 @font-face {
   font-family: custom-regular;
-  src: url("../fonts/AtkinsonHyperlegible-Regular.ttf");
+  src: url("../fonts/Oxanium-Regular.ttf");
 }
 
 @font-face {
   font-family: custom-bold;
-  src: url("../fonts/AtkinsonHyperlegible-Bold.ttf");
+  src: url("../fonts/Oxanium-Bold.ttf");
 }
 
 @font-face {
   font-family: custom-italic;
-  src: url("../fonts/AtkinsonHyperlegible-Italic.ttf");
+  src: url("../fonts/Oxanium-Light.ttf");
 }
 
 /* ------------------- VARIABLES ------------------- */

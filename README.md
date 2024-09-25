@@ -2,13 +2,14 @@
 
 An example of a rudimentary, responsive portfolio website using only HTML and CSS. This is not my actual portfolio, it was intended to function as an example for students of SMU's FSF course (2021).
 
-[View the website live](https://theodoremoreland.github.io/PortfolioExample/)
-
 <img src="presentation/thumbnail.webp" width="650">
+
+[View the website live](https://theodoremoreland.github.io/PortfolioExample/)
 
 _Note: This project was an assignment for Southern Methodist University's Full Stack Flex bootcamp (2021)._
 
 ## Table of contents
+[View the website live](https://theodoremoreland.github.io/PortfolioExample/)
 
 - [Overview](#overview)
 - [Technologies used](#technologies-used)

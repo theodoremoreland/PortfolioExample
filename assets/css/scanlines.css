@@ -20,30 +20,6 @@
   bottom: 0;
 }
 
-.scanlines__layers.wu .scanlines__layer {
-  background-image: url("../images/personal/wash-u-data-analytics-group.png");
-}
-
-.scanlines__layers.gg .scanlines__layer {
-  background-image: url("../images/personal/geekgala2019.png");
-}
-
-.scanlines__layers.ta .scanlines__layer {
-  background-image: url("../images/personal/launchcode-ta-group-2020.png");
-}
-
-.scanlines__layers.du .scanlines__layer {
-  background-image: url("../images/personal/daugherty-university-data-analytics-2020.png");
-}
-
-.scanlines__layers.md .scanlines__layer {
-  background-image: url("../images/personal/mighty-ducks-bayer-daughtery-2021.png");
-}
-
-.scanlines__layers.su .scanlines__layer {
-  background-image: url("../images/personal/smu-bootcamp-celebration-crop.png");
-}
-
 .scanlines__layer {
   position: absolute;
   left: 0;
@@ -52,27 +28,38 @@
   bottom: 0;
   background-repeat: no-repeat;
   background-position: 34% 6%;
-  opacity: 0.1;
 }
 
 .scanlines__layer:nth-child(1) {
-  /* background-color: rgb(3, 159, 0); */
+  background-color: rgb(255, 1, 187);
   transform: translateX(-5%);
-  animation: glitch-anim-1 3s infinite linear alternate;
+  animation: scanlines-anim-1 0.5s infinite linear alternate,
+    delay-animation 7s linear infinite;
 }
 
 .scanlines__layer:nth-child(2) {
-  /* background-color: rgb(2, 24, 190); */
+  background-color: #380cbd;
   transform: translateX(3%) translateY(3%);
-  animation: glitch-anim-2 3s -0.8s infinite linear alternate;
+  animation: scanlines-anim-2 1.5s -0.8s infinite linear alternate,
+    delay-animation 7s linear infinite;
 }
 
-.scanlines__layer:nth-child(3) {
-  transform: translateX(5%);
-  animation: glitch-anim-flash 3s infinite linear;
+@keyframes delay-animation {
+  0% {
+    opacity: 0.4;
+  }
+  15% {
+    opacity: 0.1;
+  }
+  15.01% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
-@keyframes glitch-anim-1 {
+@keyframes scanlines-anim-1 {
   0% {
     clip-path: polygon(0 0%, 100% 0%, 100% 5%, 0 5%);
   }
@@ -108,7 +95,7 @@
   }
 }
 
-@keyframes glitch-anim-2 {
+@keyframes scanlines-anim-2 {
   0% {
     clip-path: polygon(0 15%, 100% 15%, 100% 30%, 0 30%);
   }
@@ -141,15 +128,5 @@
   }
   100% {
     clip-path: polygon(0 11%, 100% 11%, 100% 15%, 0 15%);
-  }
-}
-
-@keyframes glitch-anim-flash {
-  0% {
-    opacity: 0.1;
-  }
-  30%,
-  100% {
-    opacity: 0;
   }
 }

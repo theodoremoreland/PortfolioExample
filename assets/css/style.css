@@ -272,6 +272,12 @@ nav li {
   }
 }
 
+@media screen and (min-width: 3000px) {
+  #title {
+    margin-top: -10%;
+  }
+}
+
 @media screen and (min-width: 3250px) {
   #title {
     margin-top: -14%;

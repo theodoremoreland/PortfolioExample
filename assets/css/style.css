@@ -84,7 +84,6 @@ section {
   width: 75%;
   max-width: 1000px;
   padding: 0px 20px;
-  margin: 25px 0;
 }
 
 @media screen and (min-width: 1025px) {
@@ -303,6 +302,17 @@ nav li {
   to {
     opacity: 1;
   }
+}
+
+/* ------------------- JUMPS ------------------- */
+
+#about-me-jump,
+#skills-jump,
+#work-experience-jump,
+#projects-jump,
+#photos-jump {
+  height: 100px;
+  width: 100%;
 }
 
 /* ------------------- ABOUT ME ------------------- */

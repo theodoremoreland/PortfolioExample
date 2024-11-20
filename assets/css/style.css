@@ -212,7 +212,7 @@ nav li {
     object-fit: cover;
     object-position: bottom;
     animation: video-fade-in 2s forwards linear;
-    animation-delay: 2.4s;
+    animation-delay: 3.6s;
 }
 
 @keyframes video-fade-in {
@@ -237,9 +237,11 @@ nav li {
 
 #title {
     z-index: 3;
+    opacity: 0;
     width: 100%;
     margin-right: -10px;
     animation: title 1.2s forwards linear;
+    animation-delay: 1.2s;
 }
 
 #subtitle {
@@ -248,7 +250,7 @@ nav li {
     width: 75%;
     opacity: 0;
     animation: subtitle 1.2s forwards linear;
-    animation-delay: 1.2s;
+    animation-delay: 2.4s;
 }
 
 @media screen and (min-width: 768px) {

@@ -204,6 +204,7 @@ nav li {
 
 #hero-video {
     position: absolute;
+    opacity: 0;
     top: 0;
     left: 0;
     height: 100%;
@@ -211,13 +212,10 @@ nav li {
     object-fit: cover;
     object-position: bottom;
     animation: video-fade-in 2s forwards linear;
+    animation-delay: 2.4s;
 }
 
 @keyframes video-fade-in {
-    from {
-        opacity: 0;
-    }
-
     to {
         opacity: 1;
     }

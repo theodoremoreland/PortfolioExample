@@ -173,6 +173,47 @@ nav li {
     margin: 0;
 }
 
+nav > ul > * {
+    opacity: 0;
+    animation: fade-in 1s forwards linear;
+}
+
+nav :nth-child(1) {
+    animation-delay: 2.4s;
+}
+
+nav :nth-child(2) {
+    animation-delay: 2.6s;
+}
+
+nav :nth-child(3) {
+    animation-delay: 2.8s;
+}
+
+nav :nth-child(4) {
+    animation-delay: 3s;
+}
+
+nav :nth-child(5) {
+    animation-delay: 3.2s;
+}
+
+nav :nth-child(6) {
+    animation-delay: 3.4s;
+}
+
+nav :nth-child(7) {
+    animation-delay: 3.6s;
+}
+
+nav :nth-child(8) {
+    animation-delay: 3.8s;
+}
+
+nav :nth-child(9) {
+    animation-delay: 4s;
+}
+
 @media screen and (min-width: 1366px) {
     nav {
         font: var(--nav-medium);
@@ -211,11 +252,11 @@ nav li {
     width: 100%;
     object-fit: cover;
     object-position: bottom;
-    animation: video-fade-in 2s forwards linear;
-    animation-delay: 3.6s;
+    animation: fade-in 2.4s forwards linear;
+    animation-delay: 5s;
 }
 
-@keyframes video-fade-in {
+@keyframes fade-in {
     to {
         opacity: 1;
     }

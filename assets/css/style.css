@@ -267,7 +267,7 @@ nav :nth-child(9) {
     align-items: center;
     justify-content: center;
     width: 100vw;
-    height: 100vh;
+    height: 100dvh;
     max-height: 2160px;
     color: var(--primary-color);
 }

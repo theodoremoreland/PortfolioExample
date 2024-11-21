@@ -36,6 +36,12 @@
     --footer-medium: 1rem custom-regular;
 
     --primary-color: #f8f8ff;
+    --secondary-color: rgb(249, 50, 213);
+    --secondary-color-transparent: rgba(249, 50, 213, 0.58);
+    --secondary-color-transparent-03: rgba(249, 50, 213, 0.3);
+    --secondary-color-transparent-02: rgba(249, 50, 213, 0.2);
+    --secondary-color-transparent-01: rgba(249, 50, 213, 0.1);
+    --secondary-color-transparent-005: rgba(249, 50, 213, 0.05);
 }
 
 /* ------------------- GLOBAL ------------------- */
@@ -54,7 +60,7 @@ body {
     background-color: black;
     background: radial-gradient(
         circle farthest-corner at bottom right,
-        deeppink -35%,
+        var(--secondary-color) -35%,
         #000001 24%
     );
 }
@@ -69,7 +75,7 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    background-color: deeppink; /* color of the scroll thumb */
+    background-color: var(--secondary-color); /* color of the scroll thumb */
 }
 
 main {
@@ -106,7 +112,8 @@ article {
 
 h2 {
     font: var(--header-large);
-    text-shadow: 0 2px 2px deeppink, -2px 5px 1px rgb(194, 16, 111);
+    text-shadow: 0 2px 2px var(--secondary-color),
+        -2px 5px 1px rgb(194, 16, 111);
     color: white;
     text-align: left;
     margin: 20px 0px;
@@ -153,7 +160,7 @@ nav {
 
 nav,
 nav a {
-    color: deeppink;
+    color: var(--secondary-color);
 }
 
 nav ul {
@@ -375,7 +382,7 @@ nav :nth-child(9) {
     left: 0;
     width: 100%;
     height: 100%;
-    border-left: dotted 1px deeppink;
+    border-left: dotted 1px var(--secondary-color);
 }
 
 #about-me h2 {
@@ -383,7 +390,7 @@ nav :nth-child(9) {
 }
 
 #about-me p {
-    color: deeppink;
+    color: var(--secondary-color);
     text-align: left;
 }
 
@@ -408,7 +415,7 @@ nav :nth-child(9) {
     width: 100%;
     height: 100%;
     margin-top: auto 0;
-    border-right: dotted 1px deeppink;
+    border-right: dotted 1px var(--secondary-color);
 }
 
 #skills ul {
@@ -435,10 +442,10 @@ nav :nth-child(9) {
 
 #skills .level {
     height: 1em;
-    background-color: deeppink;
+    background-color: var(--secondary-color);
     background: radial-gradient(
         circle farthest-corner at top right,
-        #ff149394 0%,
+        var(--secondary-color-transparent) 0%,
         #000001 127%
     );
 }
@@ -566,7 +573,7 @@ nav :nth-child(9) {
     width: 100%;
     height: 100%;
     margin-top: auto 0;
-    border-left: dotted 1px deeppink;
+    border-left: dotted 1px var(--secondary-color);
 }
 
 #work-experience ul {
@@ -592,7 +599,7 @@ nav :nth-child(9) {
 }
 
 #work-experience li .job-title {
-    color: deeppink;
+    color: var(--secondary-color);
     font-weight: bold;
 }
 
@@ -632,7 +639,7 @@ nav :nth-child(9) {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    border: inset 3px rgba(255, 20, 145, 0.4);
+    border: inset 3px var(--secondary-color-transparent);
     transition: scale 0.2s ease-in-out;
 }
 
@@ -652,7 +659,7 @@ nav :nth-child(9) {
     background-color: black;
     background: radial-gradient(
         circle farthest-corner at top left,
-        #ff149394 -30%,
+        var(--secondary-color-transparent) -30%,
         #000001 65%
     );
 }
@@ -706,7 +713,7 @@ nav :nth-child(9) {
 }
 
 .project .description {
-    color: deeppink;
+    color: var(--secondary-color);
     text-align: left;
     width: 100%;
     margin: 0;
@@ -718,10 +725,12 @@ nav :nth-child(9) {
     width: 100%;
     aspect-ratio: 4/3;
     margin-bottom: 20px;
-    border: double 1px rgba(255, 20, 145, 0.4);
-    box-shadow: rgba(255, 20, 145, 0.4) 0px 5px,
-        rgba(255, 20, 145, 0.3) 0px 10px, rgba(255, 20, 145, 0.2) 0px 15px,
-        rgba(255, 20, 145, 0.1) 0px 20px, rgba(255, 20, 145, 0.05) 0px 25px;
+    border: double 1px var(--secondary-color-transparent);
+    box-shadow: var(--secondary-color-transparent) 0px 5px,
+        var(--secondary-color-transparent-03) 0px 10px,
+        var(--secondary-color-transparent-02) 0px 15px,
+        var(--secondary-color-transparent-01) 0px 20px,
+        var(--secondary-color-transparent-005) 0px 25px;
 }
 
 .project:hover {
@@ -742,7 +751,8 @@ footer {
 
 footer h4 {
     color: white;
-    text-shadow: 0 2px 2px deeppink, -2px 5px 1px rgb(194, 16, 111);
+    text-shadow: 0 2px 2px var(--secondary-color),
+        -2px 5px 1px rgb(194, 16, 111);
     font: var(--header-small);
     width: 100%;
     margin: 10px 0px;

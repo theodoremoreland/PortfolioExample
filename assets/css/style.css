@@ -35,7 +35,7 @@
 
     --footer-medium: 1rem custom-regular;
 
-    --primary-color: #f8f8ff;
+    --primary-color: #fffefe;
     --secondary-color: rgb(252, 22, 148);
     --secondary-color-transparent: color-mix(
         in srgb,
@@ -62,6 +62,8 @@
         var(--secondary-color) 5%,
         transparent
     );
+    --tertiary-color: #fbf535;
+    --quaternary-color: #2a195e;
 }
 
 /* ------------------- GLOBAL ------------------- */
@@ -134,7 +136,7 @@ h2 {
     font: var(--header-large);
     text-shadow: 0 2px 2px var(--secondary-color),
         -2px 5px 1px rgb(194, 16, 111);
-    color: white;
+    color: var(--primary-color);
     text-align: left;
     margin: 20px 0px;
 }
@@ -267,7 +269,7 @@ nav :nth-child(9) {
     width: 100vw;
     height: 100vh;
     max-height: 2160px;
-    color: white;
+    color: var(--primary-color);
 }
 
 #hero-video {
@@ -377,6 +379,40 @@ nav :nth-child(9) {
     }
 }
 
+#scroll-down-wrapper {
+    opacity: 0;
+    z-index: 99;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1rem;
+    font-family: custom-italic;
+    color: var(--tertiary-color);
+    animation: fade-in 1.2s forwards linear;
+    animation-delay: 8s;
+
+    a {
+        color: inherit;
+    }
+
+    div {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .down-arrow {
+        margin-top: -2px;
+    }
+}
+
 /* ------------------- JUMPS ------------------- */
 
 #about-me-jump,
@@ -423,7 +459,7 @@ nav :nth-child(9) {
 
 #skills {
     position: relative;
-    color: white;
+    color: var(--primary-color);
 }
 
 #skills::before {
@@ -624,7 +660,7 @@ nav :nth-child(9) {
 }
 
 #work-experience li .company {
-    color: white;
+    color: var(--primary-color);
     font-style: italic;
 }
 
@@ -675,7 +711,7 @@ nav :nth-child(9) {
     width: 100%;
     padding: 0.5em 1em;
     font: var(--nav-xs);
-    color: white;
+    color: var(--primary-color);
     background-color: black;
     background: radial-gradient(
         circle farthest-corner at top left,
@@ -766,13 +802,13 @@ footer {
     align-items: center;
     width: 100%;
     text-align: center;
-    background-color: #2a195e;
+    background-color: var(--tertiary-color);
 }
 
 footer h4 {
-    color: white;
+    color: var(--quaternary-color);
     text-shadow: 0 2px 2px var(--secondary-color),
-        -2px 5px 1px rgb(194, 16, 111);
+        -2px 2px 1px rgb(194, 16, 111);
     font: var(--header-small);
     width: 100%;
     margin: 10px 0px;
@@ -809,7 +845,7 @@ footer img#linkedin-logo {
 }
 
 footer a {
-    color: var(--primary-color);
+    color: var(--quaternary-color);
     font: var(--nav-small);
     display: inline-block;
     margin: 12px 0px;

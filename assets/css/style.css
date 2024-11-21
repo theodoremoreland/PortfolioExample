@@ -381,7 +381,7 @@ nav :nth-child(9) {
 
 #scroll-down-wrapper {
     opacity: 0;
-    z-index: 99;
+    z-index: 3;
     position: absolute;
     bottom: 0;
     left: 0;

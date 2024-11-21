@@ -36,12 +36,32 @@
     --footer-medium: 1rem custom-regular;
 
     --primary-color: #f8f8ff;
-    --secondary-color: rgb(249, 50, 213);
-    --secondary-color-transparent: rgba(249, 50, 213, 0.58);
-    --secondary-color-transparent-03: rgba(249, 50, 213, 0.3);
-    --secondary-color-transparent-02: rgba(249, 50, 213, 0.2);
-    --secondary-color-transparent-01: rgba(249, 50, 213, 0.1);
-    --secondary-color-transparent-005: rgba(249, 50, 213, 0.05);
+    --secondary-color: rgb(248, 50, 212);
+    --secondary-color-transparent: color-mix(
+        in srgb,
+        var(--secondary-color) 58%,
+        transparent
+    );
+    --secondary-color-transparent-03: color-mix(
+        in srgb,
+        var(--secondary-color) 30%,
+        transparent
+    );
+    --secondary-color-transparent-02: color-mix(
+        in srgb,
+        var(--secondary-color) 20%,
+        transparent
+    );
+    --secondary-color-transparent-01: color-mix(
+        in srgb,
+        var(--secondary-color) 10%,
+        transparent
+    );
+    --secondary-color-transparent-005: color-mix(
+        in srgb,
+        var(--secondary-color) 5%,
+        transparent
+    );
 }
 
 /* ------------------- GLOBAL ------------------- */

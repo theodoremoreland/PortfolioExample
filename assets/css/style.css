@@ -36,7 +36,7 @@
     --footer-medium: 1rem custom-regular;
 
     --primary-color: #f8f8ff;
-    --secondary-color: rgb(248, 50, 212);
+    --secondary-color: rgb(252, 22, 148);
     --secondary-color-transparent: color-mix(
         in srgb,
         var(--secondary-color) 58%,

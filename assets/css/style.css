@@ -325,7 +325,7 @@ nav :nth-child(9) {
     opacity: 0;
     width: 100%;
     margin-right: -10px;
-    animation: title 1.2s forwards linear;
+    animation: fade-in 1.2s forwards linear;
     animation-delay: 1.2s;
 }
 
@@ -334,7 +334,7 @@ nav :nth-child(9) {
     margin-top: -9%;
     width: 75%;
     opacity: 0;
-    animation: subtitle 1.2s forwards linear;
+    animation: fade-in 1.2s forwards linear;
     animation-delay: 2.4s;
 }
 
@@ -370,27 +370,6 @@ nav :nth-child(9) {
 @media screen and (min-width: 3250px) {
     #title {
         margin-top: -14%;
-    }
-}
-
-@keyframes title {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        font-size: 7vw;
-        opacity: 1;
-    }
-}
-
-@keyframes subtitle {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
     }
 }
 

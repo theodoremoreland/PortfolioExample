@@ -407,6 +407,18 @@ nav :nth-child(9) {
     }
 }
 
+@media screen and (min-width: 2000px) {
+    #scroll-down-wrapper {
+        font-size: 1.23rem;
+    }
+}
+
+@media screen and (min-width: 2660px) {
+    #scroll-down-wrapper {
+        font-size: 1.5rem;
+    }
+}
+
 /* ------------------- JUMPS ------------------- */
 
 #about-me-jump,

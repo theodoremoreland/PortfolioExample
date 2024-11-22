@@ -64,6 +64,11 @@
         var(--secondary-color) 5%,
         transparent
     );
+    --secondary-color-shadow-1: color-mix(
+        in srgb,
+        var(--secondary-color) 77%,
+        rgb(0, 0, 0)
+    );
     --tertiary-color: #fbf535;
     --quaternary-color: #2a195e;
 }
@@ -147,7 +152,7 @@ article {
 h2 {
     font: var(--header-large);
     text-shadow: 0 2px 2px var(--secondary-color),
-        -2px 5px 1px rgb(194, 16, 111);
+        -2px 5px 1px var(--secondary-color-shadow-1);
     color: var(--primary-color);
     text-align: left;
     margin: 20px 0px;

@@ -506,7 +506,21 @@ nav :nth-child(9) {
     margin: 10px 0;
 }
 
-#skills li > p {
+#skills li > div {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.625rem;
+    height: 2rem;
+}
+
+#skills li img {
+    height: 65%;
+}
+
+#skills .skill {
     padding: 0;
     margin: 0;
 }

@@ -486,7 +486,6 @@ nav :nth-child(9) {
     left: 0;
     width: 100%;
     height: 100%;
-    margin-top: auto 0;
     border-right: dotted 1px var(--secondary-color);
     pointer-events: none;
 }
@@ -659,7 +658,6 @@ nav :nth-child(9) {
     left: 0;
     width: 100%;
     height: 100%;
-    margin-top: auto 0;
     border-left: dotted 1px var(--secondary-color);
     pointer-events: none;
 }

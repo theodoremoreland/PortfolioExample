@@ -22,7 +22,7 @@
 
     --background-color: rgb(14, 14, 23);
     --primary-color: #fffefe;
-    --secondary-color: #ff000c;
+    --secondary-color: #ff3131;
     --secondary-color-transparent: color-mix(
         in srgb,
         var(--secondary-color) 58%,

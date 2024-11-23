@@ -1,151 +1,151 @@
 /* Source: https://codepen.io/MinzCode/pen/YzqwbQV */
 
 .scanlines {
-  position: relative;
-  overflow: hidden;
+    position: relative;
+    overflow: hidden;
 }
 
 .scanlines img {
-  position: relative;
-  z-index: 1;
-  display: block;
-  animation: delayed-blur 7s linear infinite;
+    position: relative;
+    z-index: 1;
+    display: block;
+    animation: delayed-blur 7s linear infinite;
 }
 
 @keyframes delayed-blur {
-  0% {
-    filter: blur(0px);
-  }
-  5% {
-    filter: blur(5px);
-  }
-  15% {
-    filter: blur(0.5px);
-  }
-  15.01% {
-    filter: blur(0px);
-  }
-  100% {
-    filter: blur(0px);
-  }
+    0% {
+        filter: blur(0px);
+    }
+    5% {
+        filter: blur(5px);
+    }
+    15% {
+        filter: blur(0.5px);
+    }
+    15.01% {
+        filter: blur(0px);
+    }
+    100% {
+        filter: blur(0px);
+    }
 }
 
 .scanlines__layers {
-  position: absolute;
-  z-index: 2;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
 }
 
 .scanlines__layer {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  background-repeat: no-repeat;
-  background-position: 34% 6%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-position: 34% 6%;
 }
 
 .scanlines__layer:nth-child(1) {
-  background-color: rgb(255, 1, 187);
-  transform: translateX(-5%);
-  animation: scanlines-anim-1 0.5s infinite linear alternate,
-    delay-animation 7s linear infinite;
+    background-color: color-mix(in srgb, var(--accent-color) 20%, transparent);
+    transform: translateX(-5%);
+    animation: scanlines-anim-1 0.5s infinite linear alternate,
+        delay-animation 7s linear infinite;
 }
 
 .scanlines__layer:nth-child(2) {
-  background-color: #380cbd;
-  transform: translateX(3%) translateY(3%);
-  animation: scanlines-anim-2 1.5s -0.8s infinite linear alternate,
-    delay-animation 7s linear infinite;
+    background-color: var(--secondary-color);
+    transform: translateX(3%) translateY(3%);
+    animation: scanlines-anim-2 1.5s -0.8s infinite linear alternate,
+        delay-animation 7s linear infinite;
 }
 
 @keyframes delay-animation {
-  0% {
-    opacity: 0.4;
-  }
-  15% {
-    opacity: 0.1;
-  }
-  15.01% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
+    0% {
+        opacity: 0.4;
+    }
+    15% {
+        opacity: 0.1;
+    }
+    15.01% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
 }
 
 @keyframes scanlines-anim-1 {
-  0% {
-    clip-path: polygon(0 0%, 100% 0%, 100% 5%, 0 5%);
-  }
-  10% {
-    clip-path: polygon(0 15%, 100% 15%, 100% 15%, 0 15%);
-  }
-  20% {
-    clip-path: polygon(0 10%, 100% 10%, 100% 20%, 0 20%);
-  }
-  30% {
-    clip-path: polygon(0 1%, 100% 1%, 100% 2%, 0 2%);
-  }
-  40% {
-    clip-path: polygon(0 35%, 100% 35%, 100% 35%, 0 35%);
-  }
-  50% {
-    clip-path: polygon(0 45%, 100% 45%, 100% 46%, 0 46%);
-  }
-  60% {
-    clip-path: polygon(0 50%, 100% 50%, 100% 70%, 0 70%);
-  }
-  70% {
-    clip-path: polygon(0 70%, 100% 70%, 100% 70%, 0 70%);
-  }
-  80% {
-    clip-path: polygon(0 80%, 100% 80%, 100% 80%, 0 80%);
-  }
-  90% {
-    clip-path: polygon(0 50%, 100% 50%, 100% 55%, 0 55%);
-  }
-  100% {
-    clip-path: polygon(0 60%, 100% 60%, 100% 70%, 0 70%);
-  }
+    0% {
+        clip-path: polygon(0 0%, 100% 0%, 100% 5%, 0 5%);
+    }
+    10% {
+        clip-path: polygon(0 15%, 100% 15%, 100% 15%, 0 15%);
+    }
+    20% {
+        clip-path: polygon(0 10%, 100% 10%, 100% 20%, 0 20%);
+    }
+    30% {
+        clip-path: polygon(0 1%, 100% 1%, 100% 2%, 0 2%);
+    }
+    40% {
+        clip-path: polygon(0 35%, 100% 35%, 100% 35%, 0 35%);
+    }
+    50% {
+        clip-path: polygon(0 45%, 100% 45%, 100% 46%, 0 46%);
+    }
+    60% {
+        clip-path: polygon(0 50%, 100% 50%, 100% 70%, 0 70%);
+    }
+    70% {
+        clip-path: polygon(0 70%, 100% 70%, 100% 70%, 0 70%);
+    }
+    80% {
+        clip-path: polygon(0 80%, 100% 80%, 100% 80%, 0 80%);
+    }
+    90% {
+        clip-path: polygon(0 50%, 100% 50%, 100% 55%, 0 55%);
+    }
+    100% {
+        clip-path: polygon(0 60%, 100% 60%, 100% 70%, 0 70%);
+    }
 }
 
 @keyframes scanlines-anim-2 {
-  0% {
-    clip-path: polygon(0 15%, 100% 15%, 100% 30%, 0 30%);
-  }
-  15% {
-    clip-path: polygon(0 3%, 100% 3%, 100% 3%, 0 3%);
-  }
-  25% {
-    clip-path: polygon(0 8%, 100% 8%, 100% 20%, 0 20%);
-  }
-  30% {
-    clip-path: polygon(0 20%, 100% 20%, 100% 20%, 0 20%);
-  }
-  45% {
-    clip-path: polygon(0 45%, 100% 45%, 100% 45%, 0 45%);
-  }
-  50% {
-    clip-path: polygon(0 50%, 100% 50%, 100% 57%, 0 57%);
-  }
-  65% {
-    clip-path: polygon(0 60%, 100% 60%, 100% 60%, 0 60%);
-  }
-  75% {
-    clip-path: polygon(0 80%, 100% 80%, 100% 80%, 0 80%);
-  }
-  80% {
-    clip-path: polygon(0 40%, 100% 40%, 100% 60%, 0 60%);
-  }
-  95% {
-    clip-path: polygon(0 45%, 100% 45%, 100% 60%, 0 60%);
-  }
-  100% {
-    clip-path: polygon(0 11%, 100% 11%, 100% 15%, 0 15%);
-  }
+    0% {
+        clip-path: polygon(0 15%, 100% 15%, 100% 30%, 0 30%);
+    }
+    15% {
+        clip-path: polygon(0 3%, 100% 3%, 100% 3%, 0 3%);
+    }
+    25% {
+        clip-path: polygon(0 8%, 100% 8%, 100% 20%, 0 20%);
+    }
+    30% {
+        clip-path: polygon(0 20%, 100% 20%, 100% 20%, 0 20%);
+    }
+    45% {
+        clip-path: polygon(0 45%, 100% 45%, 100% 45%, 0 45%);
+    }
+    50% {
+        clip-path: polygon(0 50%, 100% 50%, 100% 57%, 0 57%);
+    }
+    65% {
+        clip-path: polygon(0 60%, 100% 60%, 100% 60%, 0 60%);
+    }
+    75% {
+        clip-path: polygon(0 80%, 100% 80%, 100% 80%, 0 80%);
+    }
+    80% {
+        clip-path: polygon(0 40%, 100% 40%, 100% 60%, 0 60%);
+    }
+    95% {
+        clip-path: polygon(0 45%, 100% 45%, 100% 60%, 0 60%);
+    }
+    100% {
+        clip-path: polygon(0 11%, 100% 11%, 100% 15%, 0 15%);
+    }
 }

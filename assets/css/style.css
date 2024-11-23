@@ -2,17 +2,17 @@
 
 @font-face {
     font-family: custom-regular;
-    src: url("../fonts/Oxanium-Regular.ttf");
+    src: url("../fonts/Rajdhani-Regular.ttf");
 }
 
 @font-face {
     font-family: custom-bold;
-    src: url("../fonts/Oxanium-Bold.ttf");
+    src: url("../fonts/Rajdhani-Bold.ttf");
 }
 
 @font-face {
     font-family: custom-italic;
-    src: url("../fonts/Oxanium-Light.ttf");
+    src: url("../fonts/Rajdhani-Light.ttf");
 }
 
 /* ------------------- VARIABLES ------------------- */
@@ -20,25 +20,9 @@
 :root {
     --max-width: 3024px;
 
-    --header-xl: 2.8rem custom-bold;
-    --header-large: 2.25rem custom-bold;
-    --header-medium: 1.85rem custom-bold;
-    --header-small: 1.5rem custom-italic;
-
-    --body-xxl: 1.8rem custom-regular;
-    --body-xl: 1.5rem custom-regular;
-    --body-large: 1.23rem custom-regular;
-    --body-medium: 1rem custom-regular;
-    --body-small: 0.9rem custom-regular;
-
-    --nav-medium: 1.6rem custom-regular;
-    --nav-small: 1.1rem custom-regular;
-    --nav-xs: 0.9rem custom-regular;
-
-    --footer-medium: 1rem custom-regular;
-
+    --background-color: rgb(14, 14, 23);
     --primary-color: #fffefe;
-    --secondary-color: rgb(252, 22, 148);
+    --secondary-color: #ff3131;
     --secondary-color-transparent: color-mix(
         in srgb,
         var(--secondary-color) 58%,
@@ -71,6 +55,7 @@
     );
     --tertiary-color: #fbf535;
     --quaternary-color: #2a195e;
+    --accent-color: #00f0ff;
 }
 
 /* ------------------- GLOBAL ------------------- */
@@ -94,11 +79,11 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: black;
+    background-color: var(--background-color);
     background: radial-gradient(
         circle farthest-corner at bottom right,
         var(--secondary-color) -35%,
-        #000001 24%
+        var(--background-color) 24%
     );
     width: 100%;
     max-width: var(--max-width);
@@ -150,7 +135,8 @@ article {
 }
 
 h2 {
-    font: var(--header-large);
+    font-family: custom-bold;
+    font-size: 2.25rem;
     text-shadow: 0 2px 2px var(--secondary-color),
         -2px 5px 1px var(--secondary-color-shadow-1);
     color: var(--primary-color);
@@ -158,8 +144,15 @@ h2 {
     margin: 20px 0px;
 }
 
+@media screen and (min-width: 3200px) {
+    h2 {
+        font-size: 2.8rem;
+    }
+}
+
 h3 {
-    font: var(--header-medium);
+    font-family: custom-bold;
+    font-size: 1.85rem;
 }
 
 a {
@@ -173,10 +166,30 @@ a:hover {
 
 p {
     max-width: 75ch;
-    font: var(--body-small);
+    font-family: custom-regular;
+    font-size: 0.9rem;
     line-height: 1.5;
     text-justify: inter-word;
     margin: 16px 0px 16px 0px;
+}
+
+@media screen and (min-width: 481px) {
+    p {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 1366px) {
+    p {
+        font-size: 1.3rem;
+        margin: 20px 0px;
+    }
+}
+
+@media screen and (min-width: 3200px) {
+    p {
+        margin: 30px 0px;
+    }
 }
 
 p::selection {
@@ -195,19 +208,31 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    font-family: custom-regular;
     width: 100%;
     max-width: var(--max-width);
     padding: 1em 0;
     margin: 0;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.89);
+    /* border-bottom: dotted 1px var(--secondary-color); */
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
         rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
         rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
+@media screen and (min-width: 769px) {
+    nav {
+        justify-content: flex-end;
+    }
+}
+
 nav,
 nav a {
     color: var(--secondary-color);
+}
+
+nav a:hover {
+    color: var(--accent-color);
 }
 
 nav ul {
@@ -223,8 +248,38 @@ nav ul {
 }
 
 nav li {
-    font: var(--nav-xs);
+    font-size: 0.9rem;
     margin: 0;
+}
+
+@media screen and (min-width: 320px) {
+    nav li {
+        margin: 0px 8px;
+    }
+}
+
+@media screen and (min-width: 481px) {
+    nav li {
+        margin: 0px 15px;
+    }
+}
+
+@media screen and (min-width: 1366px) {
+    nav,
+    nav li {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (min-width: 2660px) {
+    nav,
+    nav li {
+        font-size: 1.6rem;
+    }
+
+    nav li {
+        margin: 0px 20px;
+    }
 }
 
 nav > ul > * {
@@ -268,23 +323,6 @@ nav :nth-child(9) {
     animation-delay: 4s;
 }
 
-@media screen and (min-width: 1366px) {
-    nav {
-        font: var(--nav-medium);
-    }
-
-    nav li {
-        font: var(--nav-medium);
-    }
-}
-
-@media screen and (min-width: 2660px) {
-    nav li {
-        font: var(--body-xl);
-        margin: 0px 20px;
-    }
-}
-
 #hero-container {
     position: relative;
     display: flex;
@@ -326,7 +364,7 @@ nav :nth-child(9) {
     background: linear-gradient(
         180deg,
         rgba(2, 0, 36, 0) 75%,
-        rgb(0, 0, 0) 101%
+        var(--background-color) 101%
     );
 }
 
@@ -396,7 +434,7 @@ nav :nth-child(9) {
     width: 100%;
     box-sizing: border-box;
     padding: 1rem;
-    font-family: custom-italic;
+    font-family: custom-regular;
     color: var(--tertiary-color);
     animation: fade-in 1.2s forwards linear;
     animation-delay: 8s;
@@ -417,7 +455,7 @@ nav :nth-child(9) {
     }
 }
 
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 768px) {
     #scroll-down-wrapper {
         font-size: 1.23rem;
     }
@@ -431,22 +469,23 @@ nav :nth-child(9) {
 
 /* ------------------- JUMPS ------------------- */
 
-#about-me-jump,
-#skills-jump,
-#work-experience-jump,
-#projects-jump,
-#photos-jump {
+#about-me,
+#skills,
+#work-experience,
+#projects,
+#photos,
+#socials {
     height: 90px;
     width: 100%;
 }
 
 /* ------------------- ABOUT ME ------------------- */
 
-#about-me {
+#__about-me {
     position: relative;
 }
 
-#about-me::before {
+#__about-me::before {
     z-index: 2;
     content: "";
     position: absolute;
@@ -458,28 +497,34 @@ nav :nth-child(9) {
     pointer-events: none;
 }
 
-#about-me h2 {
+#__about-me h2 {
     margin-top: 16px;
 }
 
-#about-me p {
+@media screen and (min-width: 769px) {
+    #__about-me h2 {
+        margin-top: 0px;
+    }
+}
+
+#__about-me p {
     color: var(--secondary-color);
     text-align: left;
 }
 
-#about-me img {
+#__about-me img {
     height: 200px;
     border-radius: 200px;
 }
 
 /* ------------------- SKILLS ------------------- */
 
-#skills {
+#__skills {
     position: relative;
     color: var(--primary-color);
 }
 
-#skills::before {
+#__skills::before {
     z-index: 2;
     content: "";
     position: absolute;
@@ -491,12 +536,12 @@ nav :nth-child(9) {
     pointer-events: none;
 }
 
-#skills ul {
+#__skills ul {
     margin: 0;
     padding: 0;
 }
 
-#skills li {
+#__skills li {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -508,7 +553,7 @@ nav :nth-child(9) {
     margin: 10px 0;
 }
 
-#skills li > div {
+#__skills li > div {
     position: relative;
     display: flex;
     flex-direction: row;
@@ -518,26 +563,26 @@ nav :nth-child(9) {
     height: 2rem;
 }
 
-#skills li img {
+#__skills li img {
     height: 65%;
 }
 
-#skills .skill {
+#__skills .skill {
     padding: 0;
     margin: 0;
 }
 
-#skills .level {
+#__skills .level {
     height: 1em;
     background-color: var(--secondary-color);
     background: radial-gradient(
         circle farthest-corner at top right,
         var(--secondary-color-transparent) 0%,
-        #000001 127%
+        var(--background-color) 127%
     );
 }
 
-#skills #javascript .level {
+#__skills #javascript .level {
     width: 80%;
     animation: slide-advanced 0.5s ease;
     animation-timeline: view();
@@ -545,7 +590,7 @@ nav :nth-child(9) {
     animation-range-end: 200px;
 }
 
-#skills #react .level {
+#__skills #react .level {
     width: 60%;
     animation: slide-intermediate 0.5s ease;
     animation-timeline: view();
@@ -553,7 +598,7 @@ nav :nth-child(9) {
     animation-range-end: 200px;
 }
 
-#skills #python .level {
+#__skills #python .level {
     width: 60%;
     animation: slide-intermediate 0.5s ease;
     animation-timeline: view();
@@ -561,7 +606,7 @@ nav :nth-child(9) {
     animation-range-end: 200px;
 }
 
-#skills #typescript .level {
+#__skills #typescript .level {
     width: 60%;
     animation: slide-intermediate 0.5s ease;
     animation-timeline: view();
@@ -569,7 +614,7 @@ nav :nth-child(9) {
     animation-range-end: 200px;
 }
 
-#skills #aws .level {
+#__skills #aws .level {
     width: 60%;
     animation: slide-intermediate 0.5s ease;
     animation-timeline: view();
@@ -577,7 +622,7 @@ nav :nth-child(9) {
     animation-range-end: 200px;
 }
 
-#skills #docker .level {
+#__skills #docker .level {
     width: 40%;
     animation: slide-pro-beginner 0.5s ease;
     animation-timeline: view();
@@ -585,7 +630,7 @@ nav :nth-child(9) {
     animation-range-end: 200px;
 }
 
-#skills #sql .level {
+#__skills #sql .level {
     width: 40%;
     animation: slide-pro-beginner 0.5s ease;
     animation-timeline: view();
@@ -593,7 +638,7 @@ nav :nth-child(9) {
     animation-range-end: 200px;
 }
 
-#skills #css .level {
+#__skills #css .level {
     width: 60%;
     animation: slide-intermediate 0.5s ease;
     animation-timeline: view();
@@ -601,7 +646,7 @@ nav :nth-child(9) {
     animation-range-end: 200px;
 }
 
-#skills #git .level {
+#__skills #git .level {
     width: 40%;
     animation: slide-pro-beginner 0.5s ease;
     animation-timeline: view();
@@ -647,11 +692,11 @@ nav :nth-child(9) {
 
 /* ------------------- WORK EXPERIENCE ------------------- */
 
-#work-experience {
+#__work-experience {
     position: relative;
 }
 
-#work-experience::before {
+#__work-experience::before {
     z-index: 2;
     content: "";
     position: absolute;
@@ -663,12 +708,12 @@ nav :nth-child(9) {
     pointer-events: none;
 }
 
-#work-experience ul {
+#__work-experience ul {
     margin: 0;
     padding: 0;
 }
 
-#work-experience li {
+#__work-experience li {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -680,28 +725,28 @@ nav :nth-child(9) {
     margin: 10px 0;
 }
 
-#work-experience li > p {
+#__work-experience li > p {
     padding: 0;
     margin: 0;
 }
 
-#work-experience li .job-title {
+#__work-experience li .job-title {
     color: var(--secondary-color);
     font-weight: bold;
 }
 
-#work-experience li .company {
+#__work-experience li .company {
     color: var(--primary-color);
     font-style: italic;
 }
 
-#work-experience li .date {
+#__work-experience li .date {
     color: rgba(255, 255, 255, 0.685);
 }
 
 /* ------------------- PHOTOS ------------------- */
 
-#photos #photo-grid {
+#__photos #photo-grid {
     display: grid;
     grid-template-columns: auto;
     gap: 25px;
@@ -709,13 +754,13 @@ nav :nth-child(9) {
 }
 
 @media screen and (min-width: 768px) {
-    #photos #photo-grid {
+    #__photos #photo-grid {
         grid-template-columns: auto auto;
     }
 }
 
 @media screen and (min-width: 1920px) {
-    #photos #photo-grid {
+    #__photos #photo-grid {
         grid-template-columns: auto auto auto;
     }
 }
@@ -735,28 +780,29 @@ nav :nth-child(9) {
     scale: 2.5;
 }
 
-#photos .label {
+#__photos .label {
     box-sizing: border-box;
     display: block;
     flex-grow: 1;
     width: 100%;
     padding: 0.5em 1em;
-    font: var(--nav-xs);
+    font-family: custom-regular;
+    font-size: 1.1rem;
     color: var(--primary-color);
     background-color: black;
     background: radial-gradient(
         circle farthest-corner at top left,
         var(--secondary-color-transparent) -30%,
-        #000001 65%
+        var(--background-color) 65%
     );
 }
 
-#photos .label::selection {
+#__photos .label::selection {
     background-color: var(--tertiary-color);
     color: var(--quaternary-color);
 }
 
-#photos img {
+#__photos img {
     box-sizing: border-box;
     width: 100%;
     aspect-ratio: 16/9;
@@ -764,25 +810,25 @@ nav :nth-child(9) {
 
 /* ------------------- PROJECTS ------------------- */
 
-#projects {
+#__projects {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
 }
 
-#projects > h2 {
+#__projects > h2 {
     width: 100%;
 }
 
-#projects > div {
+#__projects > div {
     display: grid;
     grid-template-columns: 1fr;
     gap: 32px;
 }
 
 @media screen and (min-width: 768px) {
-    #projects > div {
+    #__projects > div {
         grid-template-columns: 1fr 1fr;
     }
 }
@@ -794,12 +840,19 @@ nav :nth-child(9) {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    color: var(--primary-color);
     text-align: center;
 }
 
+@media screen and (min-width: 3200px) {
+    .project {
+        max-width: 2600px;
+    }
+}
+
 .project .name {
-    font: var(--header-small);
+    font-family: custom-italic;
+    font-size: 1.5rem;
+    color: var(--primary-color);
     text-align: left;
     width: 100%;
 }
@@ -813,7 +866,8 @@ nav :nth-child(9) {
 
 .project img {
     /* Used in conjunction with ch unit to limit width. */
-    font: var(--body-large);
+    font-family: custom-regular;
+    font-size: 1.23rem;
     width: 100%;
     aspect-ratio: 4/3;
     margin-bottom: 20px;
@@ -825,8 +879,8 @@ nav :nth-child(9) {
         var(--secondary-color-transparent-005) 0px 25px;
 }
 
-.project:hover {
-    filter: brightness(1.2);
+.project:hover .description {
+    color: var(--accent-color);
 }
 
 /* ------------------- FOOTER ------------------- */
@@ -841,13 +895,25 @@ footer {
     background-color: var(--tertiary-color);
 }
 
-footer h4 {
+@media screen and (min-width: 3200px) {
+    footer {
+        margin-top: 50px;
+    }
+}
+
+footer h3 {
+    font-family: custom-regular;
     color: var(--quaternary-color);
     text-shadow: 0 2px 2px var(--secondary-color),
         -2px 2px 1px rgb(194, 16, 111);
-    font: var(--header-small);
     width: 100%;
     margin: 10px 0px;
+}
+
+@media screen and (min-width: 769px) {
+    footer h3 {
+        margin: 10px 0px;
+    }
 }
 
 footer ul {
@@ -882,104 +948,25 @@ footer img#linkedin-logo {
 
 footer a {
     color: var(--quaternary-color);
-    font: var(--nav-small);
+    font-family: custom-regular;
+    font-size: 1.1rem;
     display: inline-block;
     margin: 12px 0px;
 }
 
-footer p {
-    margin: 0;
-}
-
-/* ------------------- MEDIA QUERIES ------------------- */
-
-@media screen and (min-width: 320px) {
-    nav li {
-        margin: 0px 8px;
-    }
-}
-
-@media screen and (min-width: 481px) {
-    nav li {
-        margin: 0px 15px;
-    }
-
-    p {
-        font: var(--body-medium);
-    }
-}
-
 @media screen and (min-width: 769px) {
-    nav {
-        justify-content: flex-end;
-    }
-
-    p {
-        font: var(--body-medium);
-    }
-
-    #about-me h2 {
-        margin-top: 0px;
-    }
-
-    .project h3 {
-        font: var(--header-small);
-    }
-
-    footer h4 {
-        font: var(--header-small);
-        font-family: custom-italic;
-        margin: 10px 0px;
-    }
-
     footer a {
-        font: var(--nav-small);
         display: inline-block;
         margin: 12px 12px;
     }
 }
 
 @media screen and (min-width: 1025px) {
-    header {
-        justify-content: flex-end;
-    }
-
-    footer h4 {
-        font-family: custom-italic;
-        margin: 10px 0px;
-    }
-
     footer a {
         margin: 12px 12px;
     }
 }
 
-@media screen and (min-width: 1366px) {
-    #hero-image-container {
-        height: 600px;
-    }
-
-    p {
-        font: var(--body-large);
-        margin: 20px 0px;
-    }
-}
-
-@media screen and (min-width: 3200px) {
-    h2 {
-        font: var(--header-xl);
-    }
-
-    p {
-        font-family: custom-regular;
-        margin: 30px 0px;
-    }
-
-    .project {
-        max-width: 2600px;
-    }
-
-    footer {
-        margin-top: 50px;
-    }
+footer p {
+    margin: 0;
 }

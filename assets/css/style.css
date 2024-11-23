@@ -181,7 +181,7 @@ p {
 
 @media screen and (min-width: 1366px) {
     p {
-        font-size: 1.23rem;
+        font-size: 1.3rem;
         margin: 20px 0px;
     }
 }
@@ -208,6 +208,7 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    font-family: custom-regular;
     width: 100%;
     max-width: var(--max-width);
     padding: 1em 0;
@@ -247,8 +248,7 @@ nav ul {
 }
 
 nav li {
-    font-family: custom-regular;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     margin: 0;
 }
 
@@ -261,6 +261,24 @@ nav li {
 @media screen and (min-width: 481px) {
     nav li {
         margin: 0px 15px;
+    }
+}
+
+@media screen and (min-width: 1366px) {
+    nav,
+    nav li {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (min-width: 2660px) {
+    nav,
+    nav li {
+        font-size: 1.6rem;
+    }
+
+    nav li {
+        margin: 0px 20px;
     }
 }
 
@@ -303,26 +321,6 @@ nav :nth-child(8) {
 
 nav :nth-child(9) {
     animation-delay: 4s;
-}
-
-@media screen and (min-width: 1366px) {
-    nav {
-        font-family: custom-regular;
-        font-size: 1.6rem;
-    }
-
-    nav li {
-        font-family: custom-regular;
-        font-size: 1.6rem;
-    }
-}
-
-@media screen and (min-width: 2660px) {
-    nav li {
-        font-family: custom-regular;
-        font-size: 1.5rem;
-        margin: 0px 20px;
-    }
 }
 
 #hero-container {
@@ -436,7 +434,7 @@ nav :nth-child(9) {
     width: 100%;
     box-sizing: border-box;
     padding: 1rem;
-    font-family: custom-italic;
+    font-family: custom-regular;
     color: var(--tertiary-color);
     animation: fade-in 1.2s forwards linear;
     animation-delay: 8s;
@@ -457,7 +455,7 @@ nav :nth-child(9) {
     }
 }
 
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 768px) {
     #scroll-down-wrapper {
         font-size: 1.23rem;
     }
@@ -902,18 +900,17 @@ footer {
     }
 }
 
-footer h4 {
+footer h3 {
+    font-family: custom-regular;
     color: var(--quaternary-color);
     text-shadow: 0 2px 2px var(--secondary-color),
         -2px 2px 1px rgb(194, 16, 111);
-    font-family: custom-italic;
-    font-size: 1.5rem;
     width: 100%;
     margin: 10px 0px;
 }
 
 @media screen and (min-width: 769px) {
-    footer h4 {
+    footer h3 {
         margin: 10px 0px;
     }
 }

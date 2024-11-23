@@ -469,22 +469,23 @@ nav :nth-child(9) {
 
 /* ------------------- JUMPS ------------------- */
 
-#about-me-jump,
-#skills-jump,
-#work-experience-jump,
-#projects-jump,
-#photos-jump {
+#about-me,
+#skills,
+#work-experience,
+#projects,
+#photos,
+#socials {
     height: 90px;
     width: 100%;
 }
 
 /* ------------------- ABOUT ME ------------------- */
 
-#about-me {
+#__about-me {
     position: relative;
 }
 
-#about-me::before {
+#__about-me::before {
     z-index: 2;
     content: "";
     position: absolute;
@@ -496,34 +497,34 @@ nav :nth-child(9) {
     pointer-events: none;
 }
 
-#about-me h2 {
+#__about-me h2 {
     margin-top: 16px;
 }
 
 @media screen and (min-width: 769px) {
-    #about-me h2 {
+    #__about-me h2 {
         margin-top: 0px;
     }
 }
 
-#about-me p {
+#__about-me p {
     color: var(--secondary-color);
     text-align: left;
 }
 
-#about-me img {
+#__about-me img {
     height: 200px;
     border-radius: 200px;
 }
 
 /* ------------------- SKILLS ------------------- */
 
-#skills {
+#__skills {
     position: relative;
     color: var(--primary-color);
 }
 
-#skills::before {
+#__skills::before {
     z-index: 2;
     content: "";
     position: absolute;
@@ -535,12 +536,12 @@ nav :nth-child(9) {
     pointer-events: none;
 }
 
-#skills ul {
+#__skills ul {
     margin: 0;
     padding: 0;
 }
 
-#skills li {
+#__skills li {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -552,7 +553,7 @@ nav :nth-child(9) {
     margin: 10px 0;
 }
 
-#skills li > div {
+#__skills li > div {
     position: relative;
     display: flex;
     flex-direction: row;
@@ -562,16 +563,16 @@ nav :nth-child(9) {
     height: 2rem;
 }
 
-#skills li img {
+#__skills li img {
     height: 65%;
 }
 
-#skills .skill {
+#__skills .skill {
     padding: 0;
     margin: 0;
 }
 
-#skills .level {
+#__skills .level {
     height: 1em;
     background-color: var(--secondary-color);
     background: radial-gradient(
@@ -581,7 +582,7 @@ nav :nth-child(9) {
     );
 }
 
-#skills #javascript .level {
+#__skills #javascript .level {
     width: 80%;
     animation: slide-advanced 0.5s ease;
     animation-timeline: view();
@@ -589,7 +590,7 @@ nav :nth-child(9) {
     animation-range-end: 200px;
 }
 
-#skills #react .level {
+#__skills #react .level {
     width: 60%;
     animation: slide-intermediate 0.5s ease;
     animation-timeline: view();
@@ -597,7 +598,7 @@ nav :nth-child(9) {
     animation-range-end: 200px;
 }
 
-#skills #python .level {
+#__skills #python .level {
     width: 60%;
     animation: slide-intermediate 0.5s ease;
     animation-timeline: view();
@@ -605,7 +606,7 @@ nav :nth-child(9) {
     animation-range-end: 200px;
 }
 
-#skills #typescript .level {
+#__skills #typescript .level {
     width: 60%;
     animation: slide-intermediate 0.5s ease;
     animation-timeline: view();
@@ -613,7 +614,7 @@ nav :nth-child(9) {
     animation-range-end: 200px;
 }
 
-#skills #aws .level {
+#__skills #aws .level {
     width: 60%;
     animation: slide-intermediate 0.5s ease;
     animation-timeline: view();
@@ -621,7 +622,7 @@ nav :nth-child(9) {
     animation-range-end: 200px;
 }
 
-#skills #docker .level {
+#__skills #docker .level {
     width: 40%;
     animation: slide-pro-beginner 0.5s ease;
     animation-timeline: view();
@@ -629,7 +630,7 @@ nav :nth-child(9) {
     animation-range-end: 200px;
 }
 
-#skills #sql .level {
+#__skills #sql .level {
     width: 40%;
     animation: slide-pro-beginner 0.5s ease;
     animation-timeline: view();
@@ -637,7 +638,7 @@ nav :nth-child(9) {
     animation-range-end: 200px;
 }
 
-#skills #css .level {
+#__skills #css .level {
     width: 60%;
     animation: slide-intermediate 0.5s ease;
     animation-timeline: view();
@@ -645,7 +646,7 @@ nav :nth-child(9) {
     animation-range-end: 200px;
 }
 
-#skills #git .level {
+#__skills #git .level {
     width: 40%;
     animation: slide-pro-beginner 0.5s ease;
     animation-timeline: view();
@@ -691,11 +692,11 @@ nav :nth-child(9) {
 
 /* ------------------- WORK EXPERIENCE ------------------- */
 
-#work-experience {
+#__work-experience {
     position: relative;
 }
 
-#work-experience::before {
+#__work-experience::before {
     z-index: 2;
     content: "";
     position: absolute;
@@ -707,12 +708,12 @@ nav :nth-child(9) {
     pointer-events: none;
 }
 
-#work-experience ul {
+#__work-experience ul {
     margin: 0;
     padding: 0;
 }
 
-#work-experience li {
+#__work-experience li {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -724,28 +725,28 @@ nav :nth-child(9) {
     margin: 10px 0;
 }
 
-#work-experience li > p {
+#__work-experience li > p {
     padding: 0;
     margin: 0;
 }
 
-#work-experience li .job-title {
+#__work-experience li .job-title {
     color: var(--secondary-color);
     font-weight: bold;
 }
 
-#work-experience li .company {
+#__work-experience li .company {
     color: var(--primary-color);
     font-style: italic;
 }
 
-#work-experience li .date {
+#__work-experience li .date {
     color: rgba(255, 255, 255, 0.685);
 }
 
 /* ------------------- PHOTOS ------------------- */
 
-#photos #photo-grid {
+#__photos #photo-grid {
     display: grid;
     grid-template-columns: auto;
     gap: 25px;
@@ -753,13 +754,13 @@ nav :nth-child(9) {
 }
 
 @media screen and (min-width: 768px) {
-    #photos #photo-grid {
+    #__photos #photo-grid {
         grid-template-columns: auto auto;
     }
 }
 
 @media screen and (min-width: 1920px) {
-    #photos #photo-grid {
+    #__photos #photo-grid {
         grid-template-columns: auto auto auto;
     }
 }
@@ -779,7 +780,7 @@ nav :nth-child(9) {
     scale: 2.5;
 }
 
-#photos .label {
+#__photos .label {
     box-sizing: border-box;
     display: block;
     flex-grow: 1;
@@ -796,12 +797,12 @@ nav :nth-child(9) {
     );
 }
 
-#photos .label::selection {
+#__photos .label::selection {
     background-color: var(--tertiary-color);
     color: var(--quaternary-color);
 }
 
-#photos img {
+#__photos img {
     box-sizing: border-box;
     width: 100%;
     aspect-ratio: 16/9;
@@ -809,25 +810,25 @@ nav :nth-child(9) {
 
 /* ------------------- PROJECTS ------------------- */
 
-#projects {
+#__projects {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
 }
 
-#projects > h2 {
+#__projects > h2 {
     width: 100%;
 }
 
-#projects > div {
+#__projects > div {
     display: grid;
     grid-template-columns: 1fr;
     gap: 32px;
 }
 
 @media screen and (min-width: 768px) {
-    #projects > div {
+    #__projects > div {
         grid-template-columns: 1fr 1fr;
     }
 }

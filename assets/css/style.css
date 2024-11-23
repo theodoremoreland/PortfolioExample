@@ -2,17 +2,17 @@
 
 @font-face {
     font-family: custom-regular;
-    src: url("../fonts/Oxanium-Regular.ttf");
+    src: url("../fonts/Rajdhani-Regular.ttf");
 }
 
 @font-face {
     font-family: custom-bold;
-    src: url("../fonts/Oxanium-Bold.ttf");
+    src: url("../fonts/Rajdhani-Bold.ttf");
 }
 
 @font-face {
     font-family: custom-italic;
-    src: url("../fonts/Oxanium-Light.ttf");
+    src: url("../fonts/Rajdhani-Light.ttf");
 }
 
 /* ------------------- VARIABLES ------------------- */
@@ -37,8 +37,9 @@
 
     --footer-medium: 1rem custom-regular;
 
+    --background-color: rgb(14, 14, 23);
     --primary-color: #fffefe;
-    --secondary-color: rgb(252, 22, 148);
+    --secondary-color: #ff000c;
     --secondary-color-transparent: color-mix(
         in srgb,
         var(--secondary-color) 58%,
@@ -71,6 +72,7 @@
     );
     --tertiary-color: #fbf535;
     --quaternary-color: #2a195e;
+    --accent-color: #00f0ff;
 }
 
 /* ------------------- GLOBAL ------------------- */
@@ -94,11 +96,11 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: black;
+    background-color: var(--background-color);
     background: radial-gradient(
         circle farthest-corner at bottom right,
         var(--secondary-color) -35%,
-        #000001 24%
+        var(--background-color) 24%
     );
     width: 100%;
     max-width: var(--max-width);
@@ -199,7 +201,8 @@ nav {
     max-width: var(--max-width);
     padding: 1em 0;
     margin: 0;
-    background-color: black;
+    background-color: var(--background-color);
+    /* border-bottom: dotted 1px var(--secondary-color); */
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
         rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
         rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -208,6 +211,10 @@ nav {
 nav,
 nav a {
     color: var(--secondary-color);
+}
+
+nav a:hover {
+    color: var(--accent-color);
 }
 
 nav ul {
@@ -326,7 +333,7 @@ nav :nth-child(9) {
     background: linear-gradient(
         180deg,
         rgba(2, 0, 36, 0) 75%,
-        rgb(0, 0, 0) 101%
+        var(--background-color) 101%
     );
 }
 
@@ -533,7 +540,7 @@ nav :nth-child(9) {
     background: radial-gradient(
         circle farthest-corner at top right,
         var(--secondary-color-transparent) 0%,
-        #000001 127%
+        var(--background-color) 127%
     );
 }
 
@@ -747,7 +754,7 @@ nav :nth-child(9) {
     background: radial-gradient(
         circle farthest-corner at top left,
         var(--secondary-color-transparent) -30%,
-        #000001 65%
+        var(--background-color) 65%
     );
 }
 
@@ -794,12 +801,12 @@ nav :nth-child(9) {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    color: var(--primary-color);
     text-align: center;
 }
 
 .project .name {
     font: var(--header-small);
+    color: var(--primary-color);
     text-align: left;
     width: 100%;
 }
@@ -825,8 +832,8 @@ nav :nth-child(9) {
         var(--secondary-color-transparent-005) 0px 25px;
 }
 
-.project:hover {
-    filter: brightness(1.2);
+.project:hover .description {
+    color: var(--accent-color);
 }
 
 /* ------------------- FOOTER ------------------- */

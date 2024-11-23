@@ -213,7 +213,7 @@ nav {
     max-width: var(--max-width);
     padding: 1em 0;
     margin: 0;
-    background-color: var(--background-color);
+    background-color: rgba(0, 0, 0, 0.89);
     /* border-bottom: dotted 1px var(--secondary-color); */
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
         rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,

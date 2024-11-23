@@ -20,23 +20,6 @@
 :root {
     --max-width: 3024px;
 
-    --header-xl: 2.8rem custom-bold;
-    --header-large: 2.25rem custom-bold;
-    --header-medium: 1.85rem custom-bold;
-    --header-small: 1.5rem custom-italic;
-
-    --body-xxl: 1.8rem custom-regular;
-    --body-xl: 1.5rem custom-regular;
-    --body-large: 1.23rem custom-regular;
-    --body-medium: 1rem custom-regular;
-    --body-small: 0.9rem custom-regular;
-
-    --nav-medium: 1.6rem custom-regular;
-    --nav-small: 1.1rem custom-regular;
-    --nav-xs: 0.9rem custom-regular;
-
-    --footer-medium: 1rem custom-regular;
-
     --background-color: rgb(14, 14, 23);
     --primary-color: #fffefe;
     --secondary-color: #ff000c;
@@ -152,7 +135,8 @@ article {
 }
 
 h2 {
-    font: var(--header-large);
+    font-family: custom-bold;
+    font-size: 2.25rem;
     text-shadow: 0 2px 2px var(--secondary-color),
         -2px 5px 1px var(--secondary-color-shadow-1);
     color: var(--primary-color);
@@ -162,12 +146,13 @@ h2 {
 
 @media screen and (min-width: 3200px) {
     h2 {
-        font: var(--header-xl);
+        font-size: 2.8rem;
     }
 }
 
 h3 {
-    font: var(--header-medium);
+    font-family: custom-bold;
+    font-size: 1.85rem;
 }
 
 a {
@@ -181,7 +166,8 @@ a:hover {
 
 p {
     max-width: 75ch;
-    font: var(--body-small);
+    font-family: custom-regular;
+    font-size: 0.9rem;
     line-height: 1.5;
     text-justify: inter-word;
     margin: 16px 0px 16px 0px;
@@ -189,26 +175,19 @@ p {
 
 @media screen and (min-width: 481px) {
     p {
-        font: var(--body-medium);
-    }
-}
-
-@media screen and (min-width: 769px) {
-    p {
-        font: var(--body-medium);
+        font-size: 1rem;
     }
 }
 
 @media screen and (min-width: 1366px) {
     p {
-        font: var(--body-large);
+        font-size: 1.23rem;
         margin: 20px 0px;
     }
 }
 
 @media screen and (min-width: 3200px) {
     p {
-        font-family: custom-regular;
         margin: 30px 0px;
     }
 }
@@ -268,7 +247,8 @@ nav ul {
 }
 
 nav li {
-    font: var(--nav-xs);
+    font-family: custom-regular;
+    font-size: 1.1rem;
     margin: 0;
 }
 
@@ -327,17 +307,20 @@ nav :nth-child(9) {
 
 @media screen and (min-width: 1366px) {
     nav {
-        font: var(--nav-medium);
+        font-family: custom-regular;
+        font-size: 1.6rem;
     }
 
     nav li {
-        font: var(--nav-medium);
+        font-family: custom-regular;
+        font-size: 1.6rem;
     }
 }
 
 @media screen and (min-width: 2660px) {
     nav li {
-        font: var(--body-xl);
+        font-family: custom-regular;
+        font-size: 1.5rem;
         margin: 0px 20px;
     }
 }
@@ -804,7 +787,8 @@ nav :nth-child(9) {
     flex-grow: 1;
     width: 100%;
     padding: 0.5em 1em;
-    font: var(--nav-xs);
+    font-family: custom-regular;
+    font-size: 1.1rem;
     color: var(--primary-color);
     background-color: black;
     background: radial-gradient(
@@ -867,16 +851,11 @@ nav :nth-child(9) {
 }
 
 .project .name {
-    font: var(--header-small);
+    font-family: custom-italic;
+    font-size: 1.5rem;
     color: var(--primary-color);
     text-align: left;
     width: 100%;
-}
-
-@media screen and (min-width: 769px) {
-    .project .name {
-        font: var(--header-small);
-    }
 }
 
 .project .description {
@@ -888,7 +867,8 @@ nav :nth-child(9) {
 
 .project img {
     /* Used in conjunction with ch unit to limit width. */
-    font: var(--body-large);
+    font-family: custom-regular;
+    font-size: 1.23rem;
     width: 100%;
     aspect-ratio: 4/3;
     margin-bottom: 20px;
@@ -926,22 +906,14 @@ footer h4 {
     color: var(--quaternary-color);
     text-shadow: 0 2px 2px var(--secondary-color),
         -2px 2px 1px rgb(194, 16, 111);
-    font: var(--header-small);
+    font-family: custom-italic;
+    font-size: 1.5rem;
     width: 100%;
     margin: 10px 0px;
 }
 
 @media screen and (min-width: 769px) {
     footer h4 {
-        font: var(--header-small);
-        font-family: custom-italic;
-        margin: 10px 0px;
-    }
-}
-
-@media screen and (min-width: 1025px) {
-    footer h4 {
-        font-family: custom-italic;
         margin: 10px 0px;
     }
 }
@@ -978,14 +950,14 @@ footer img#linkedin-logo {
 
 footer a {
     color: var(--quaternary-color);
-    font: var(--nav-small);
+    font-family: custom-regular;
+    font-size: 1.1rem;
     display: inline-block;
     margin: 12px 0px;
 }
 
 @media screen and (min-width: 769px) {
     footer a {
-        font: var(--nav-small);
         display: inline-block;
         margin: 12px 12px;
     }

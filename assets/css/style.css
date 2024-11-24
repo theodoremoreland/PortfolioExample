@@ -25,9 +25,9 @@
     --quaternary-color: #2a195e;
     --accent-color: #00f0ff;
 
-    --secondary-color-transparent: color-mix(
+    --secondary-color-transparent-05: color-mix(
         in srgb,
-        var(--secondary-color) 58%,
+        var(--secondary-color) 50%,
         transparent
     );
     --secondary-color-transparent-03: color-mix(
@@ -576,7 +576,7 @@ nav :nth-child(9) {
     background-color: var(--secondary-color);
     background: radial-gradient(
         circle farthest-corner at top right,
-        var(--secondary-color-transparent) 0%,
+        var(--secondary-color-transparent-05) 0%,
         var(--background-color) 127%
     );
 }
@@ -770,7 +770,7 @@ nav :nth-child(9) {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    border: inset 3px var(--secondary-color-transparent);
+    border: inset 3px var(--secondary-color-transparent-05);
     transition: scale 0.2s ease-in-out;
 }
 
@@ -791,7 +791,7 @@ nav :nth-child(9) {
     background-color: black;
     background: radial-gradient(
         circle farthest-corner at top left,
-        var(--secondary-color-transparent) -30%,
+        var(--secondary-color-transparent-05) -30%,
         var(--background-color) 65%
     );
 }
@@ -870,8 +870,8 @@ nav :nth-child(9) {
     width: 100%;
     aspect-ratio: 4/3;
     margin-bottom: 20px;
-    border: double 1px var(--secondary-color-transparent);
-    box-shadow: var(--secondary-color-transparent) 0px 5px,
+    border: double 1px var(--secondary-color-transparent-05);
+    box-shadow: var(--secondary-color-transparent-05) 0px 5px,
         var(--secondary-color-transparent-03) 0px 10px,
         var(--secondary-color-transparent-02) 0px 15px,
         var(--secondary-color-transparent-01) 0px 20px,

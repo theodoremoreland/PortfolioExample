@@ -471,12 +471,7 @@ nav :nth-child(9) {
 
 /* ------------------- JUMPS ------------------- */
 
-#about-me,
-#skills,
-#work-experience,
-#projects,
-#photos,
-#socials {
+.jump {
     height: 90px;
     width: 100%;
 }

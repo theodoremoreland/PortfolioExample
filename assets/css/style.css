@@ -423,6 +423,7 @@ nav :nth-child(9) {
     }
 }
 
+#back-to-top-wrapper,
 #scroll-down-wrapper {
     opacity: 0;
     z-index: 3;
@@ -455,15 +456,26 @@ nav :nth-child(9) {
     .down-arrow {
         margin-top: -2px;
     }
+
+    .up-arrow {
+        margin-top: 2px;
+        transform: rotate(180deg);
+    }
+}
+
+#back-to-top-wrapper {
+    opacity: 1;
 }
 
 @media screen and (min-width: 768px) {
+    #back-to-top-wrapper,
     #scroll-down-wrapper {
         font-size: 1.23rem;
     }
 }
 
 @media screen and (min-width: 2660px) {
+    #back-to-top-wrapper,
     #scroll-down-wrapper {
         font-size: 1.5rem;
     }
@@ -472,6 +484,7 @@ nav :nth-child(9) {
 /* ------------------- JUMPS ------------------- */
 
 .jump {
+    position: relative;
     height: 90px;
     width: 100%;
 }

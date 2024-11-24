@@ -1,5 +1,3 @@
-/* BASE DESIGN BASED ON APPEARANCE ON GALAXY FOLD (280px) */
-
 @font-face {
     font-family: custom-regular;
     src: url("../fonts/Rajdhani-Regular.ttf");
@@ -20,9 +18,13 @@
 :root {
     --max-width: 3024px;
 
-    --background-color: rgb(14, 14, 23);
+    --background-color: #0e0e17;
     --primary-color: #fffefe;
     --secondary-color: #ff3131;
+    --tertiary-color: #fbf535;
+    --quaternary-color: #2a195e;
+    --accent-color: #00f0ff;
+
     --secondary-color-transparent: color-mix(
         in srgb,
         var(--secondary-color) 58%,
@@ -53,9 +55,6 @@
         var(--secondary-color) 77%,
         rgb(0, 0, 0)
     );
-    --tertiary-color: #fbf535;
-    --quaternary-color: #2a195e;
-    --accent-color: #00f0ff;
 }
 
 /* ------------------- GLOBAL ------------------- */
@@ -214,7 +213,7 @@ nav {
     padding: 1em 0;
     margin: 0;
     background-color: rgba(0, 0, 0, 0.89);
-    /* border-bottom: dotted 1px var(--secondary-color); */
+    border-bottom: solid 1px var(--secondary-color);
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
         rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
         rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -850,7 +849,7 @@ nav :nth-child(9) {
 }
 
 .project .name {
-    font-family: custom-italic;
+    font-family: custom-regular;
     font-size: 1.5rem;
     color: var(--primary-color);
     text-align: left;

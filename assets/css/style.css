@@ -403,24 +403,11 @@ nav :nth-child(9) {
 @media screen and (min-width: 2660px) {
     #title {
         width: 70%;
-        margin-top: -5%;
     }
 
     #subtitle {
         margin-top: -5%;
         width: 30%;
-    }
-}
-
-@media screen and (min-width: 3000px) {
-    #title {
-        margin-top: -10%;
-    }
-}
-
-@media screen and (min-width: 3250px) {
-    #title {
-        margin-top: -14%;
     }
 }
 

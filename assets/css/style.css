@@ -94,7 +94,9 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-    background: #2a195e; /* color of the tracking area */
+    background: var(
+        --secondary-color-transparent-03
+    ); /* color of the tracking area */
 }
 
 body::-webkit-scrollbar-thumb {

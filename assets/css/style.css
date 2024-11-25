@@ -346,7 +346,7 @@ nav :nth-child(9) {
     height: 100%;
     width: 100%;
     object-fit: cover;
-    object-position: bottom;
+    object-position: 50% 80%;
     animation: fade-in 2.4s forwards linear;
     animation-delay: 5s;
 }

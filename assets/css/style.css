@@ -864,16 +864,8 @@ nav :nth-child(9) {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    border: solid 1px var(--secondary-color-transparent-03);
-    border-left: none;
-    border-top: none;
-    border-right: none;
+    border: solid 1px var(--secondary-color-transparent-01);
     transition: scale 0.2s ease-in-out;
-}
-
-#photo-grid > div:hover {
-    z-index: 3;
-    scale: 1.05;
 }
 
 #__photos .label {

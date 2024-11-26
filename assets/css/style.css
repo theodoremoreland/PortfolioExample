@@ -864,13 +864,16 @@ nav :nth-child(9) {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    border: inset 3px var(--secondary-color-transparent-05);
+    border: solid 1px var(--secondary-color-transparent-03);
+    border-left: none;
+    border-top: none;
+    border-right: none;
     transition: scale 0.2s ease-in-out;
 }
 
 #photo-grid > div:hover {
     z-index: 3;
-    scale: 2.5;
+    scale: 1.05;
 }
 
 #__photos .label {
@@ -881,12 +884,13 @@ nav :nth-child(9) {
     padding: 0.5em 1em;
     font-family: custom-regular;
     font-size: 1.1rem;
-    color: var(--primary-color);
-    background-color: black;
+    text-align: center;
+    color: var(--secondary-color);
+    background-color: var(--background-color);
     background: radial-gradient(
-        circle farthest-corner at top left,
-        var(--secondary-color-transparent-05) -30%,
-        var(--background-color) 65%
+        circle farthest-corner at bottom right,
+        var(--secondary-color) -26%,
+        var(--background-color) 9%
     );
 }
 

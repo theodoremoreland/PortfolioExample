@@ -9,7 +9,7 @@
     position: relative;
     z-index: 1;
     display: block;
-    animation: delayed-blur 7s linear infinite;
+    animation: delayed-blur 6s linear infinite;
 }
 
 @keyframes delayed-blur {
@@ -50,17 +50,17 @@
 }
 
 .scanlines__layer:nth-child(1) {
-    background-color: color-mix(in srgb, var(--accent-color) 20%, transparent);
+    background-color: var(--secondary-color-transparent-03);
     transform: translateX(-5%);
     animation: scanlines-anim-1 0.5s infinite linear alternate,
-        delay-animation 7s linear infinite;
+        delay-animation 6s linear infinite;
 }
 
 .scanlines__layer:nth-child(2) {
     background-color: var(--secondary-color);
     transform: translateX(3%) translateY(3%);
     animation: scanlines-anim-2 1.5s -0.8s infinite linear alternate,
-        delay-animation 7s linear infinite;
+        delay-animation 6s linear infinite;
 }
 
 @keyframes delay-animation {

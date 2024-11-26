@@ -100,7 +100,6 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-    border-radius: 10px;
     background-color: var(--secondary-color); /* color of the scroll thumb */
 }
 

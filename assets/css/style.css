@@ -584,11 +584,6 @@ nav :nth-child(9) {
     text-align: left;
 }
 
-#__about-me img {
-    height: 200px;
-    border-radius: 200px;
-}
-
 /* ------------------- SKILLS ------------------- */
 
 #__skills {

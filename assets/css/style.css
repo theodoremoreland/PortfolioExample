@@ -55,6 +55,32 @@
         var(--secondary-color) 77%,
         rgb(0, 0, 0)
     );
+
+    --accent-color-transparent-05: color-mix(
+        in srgb,
+        var(--accent-color) 50%,
+        transparent
+    );
+    --accent-color-transparent-03: color-mix(
+        in srgb,
+        var(--accent-color) 30%,
+        transparent
+    );
+    --accent-color-transparent-02: color-mix(
+        in srgb,
+        var(--accent-color) 20%,
+        transparent
+    );
+    --accent-color-transparent-01: color-mix(
+        in srgb,
+        var(--accent-color) 10%,
+        transparent
+    );
+    --accent-color-transparent-005: color-mix(
+        in srgb,
+        var(--accent-color) 5%,
+        transparent
+    );
 }
 
 /* ------------------- GLOBAL ------------------- */
@@ -948,6 +974,15 @@ nav :nth-child(9) {
 
 .project:hover .description {
     color: var(--accent-color);
+}
+
+.project:hover img {
+    border: double 1px var(--accent-color-transparent-05);
+    box-shadow: var(--accent-color-transparent-05) 0px 5px,
+        var(--accent-color-transparent-03) 0px 10px,
+        var(--accent-color-transparent-02) 0px 15px,
+        var(--accent-color-transparent-01) 0px 20px,
+        var(--accent-color-transparent-005) 0px 25px;
 }
 
 /* ------------------- FOOTER ------------------- */

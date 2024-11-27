@@ -946,8 +946,14 @@ nav :nth-child(9) {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    border: solid 1px var(--secondary-color-transparent-01);
-    transition: scale 0.2s ease-in-out;
+    border: solid 1px var(--secondary-color-transparent-05);
+    border-left-width: 7px;
+}
+
+#__photos img {
+    box-sizing: border-box;
+    width: 100%;
+    aspect-ratio: 16/9;
 }
 
 #__photos .label {
@@ -971,12 +977,6 @@ nav :nth-child(9) {
 #__photos .label::selection {
     background-color: var(--tertiary-color);
     color: var(--quaternary-color);
-}
-
-#__photos img {
-    box-sizing: border-box;
-    width: 100%;
-    aspect-ratio: 16/9;
 }
 
 /* ------------------- FOOTER ------------------- */

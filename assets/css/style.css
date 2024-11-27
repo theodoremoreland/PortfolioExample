@@ -968,17 +968,17 @@ nav :nth-child(9) {
         var(--secondary-color-transparent-005) 0px 25px;
 }
 
-.project:hover .description {
-    color: var(--accent-color);
-}
-
-.project:hover img {
+.project a:hover img {
     border: double 1px var(--accent-color-transparent-05);
     box-shadow: var(--accent-color-transparent-05) 0px 5px,
         var(--accent-color-transparent-03) 0px 10px,
         var(--accent-color-transparent-02) 0px 15px,
         var(--accent-color-transparent-01) 0px 20px,
         var(--accent-color-transparent-005) 0px 25px;
+}
+
+.project a:hover ~ .description {
+    color: var(--accent-color);
 }
 
 /* ------------------- FOOTER ------------------- */

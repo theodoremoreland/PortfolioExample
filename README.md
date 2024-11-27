@@ -33,7 +33,7 @@ The assignment requirements went as follows:
     -   Presents previously deployed websites or placeholders for future deployments
     -   Each website presented on portfolio should have an image and title
     -   When you click on a presented website, it should take you to the website
-    -   The first website featured should have a larger image than the others _(I opted not to comply with this requirement on my most recent version)_
+    -   The first website featured should have a larger image than the others _(I did not to comply with this requirement on my most recent version)_
 -   Must have a `Contact info` section _(I preferred to limit contact info to professional "social media" accounts e.g. LinkedIn, GitHub, etc...)_
 -   Website must be deployed to live server
 -   Website must be responsive using flexbox and media queries

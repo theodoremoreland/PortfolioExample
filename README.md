@@ -99,38 +99,50 @@ The assignment requirements went as follows:
 
 <img src="https://dj8eg5xs13hf6.cloudfront.net/portfolio-example/7.png" width="250">
 
-#### About me section
+#### About me
 
 <img src="https://dj8eg5xs13hf6.cloudfront.net/portfolio-example/8.png" width="250">
 
-#### Skills section
+#### About me 2
 
 <img src="https://dj8eg5xs13hf6.cloudfront.net/portfolio-example/9.png" width="250">
 
-#### Work experience section
+#### Skills
 
 <img src="https://dj8eg5xs13hf6.cloudfront.net/portfolio-example/10.png" width="250">
 
-#### Projects section
+#### Work Experience
 
 <img src="https://dj8eg5xs13hf6.cloudfront.net/portfolio-example/11.png" width="250">
 
-#### Projects section 2
+#### Projects 1
 
 <img src="https://dj8eg5xs13hf6.cloudfront.net/portfolio-example/12.png" width="250">
 
-#### Projects section 3
+#### Projects 2
 
 <img src="https://dj8eg5xs13hf6.cloudfront.net/portfolio-example/13.png" width="250">
 
-#### Photos
+#### Projects 3
 
 <img src="https://dj8eg5xs13hf6.cloudfront.net/portfolio-example/14.png" width="250">
 
-#### Photos 2
+#### Projects 4
 
 <img src="https://dj8eg5xs13hf6.cloudfront.net/portfolio-example/15.png" width="250">
 
-#### Socials
+#### Photos 1
 
 <img src="https://dj8eg5xs13hf6.cloudfront.net/portfolio-example/16.png" width="250">
+
+#### Photos 2
+
+<img src="https://dj8eg5xs13hf6.cloudfront.net/portfolio-example/17.png" width="250">
+
+#### Photos 3
+
+<img src="https://dj8eg5xs13hf6.cloudfront.net/portfolio-example/18.png" width="250">
+
+#### Socials
+
+<img src="https://dj8eg5xs13hf6.cloudfront.net/portfolio-example/19.png" width="250">

@@ -2,6 +2,8 @@
 
 A responsive portfolio webpage using only HTML and CSS. This is not my actual portfolio, it was intended to function as an example for students of SMU's FSF course (2021). However, this project was so much fun that it became more of an experiment and personal challenge to make a portfolio within certain contraints originally imposed by the course (no JavaScript, no CSS frameworks, simple layout, etc).
 
+The page was inspired by CyberPunk and features a few "glitch" effects. Said effects sometimes double as a way to reference "redacted" information, or in other words information that is withheld as to establish the "example" nature of the webpage. Granted, many users will find that confusing, but again this is more of an experiment. I didn't want it to take place of my real portfolio, which is a work in progress. 
+
 <img src="presentation/thumbnail.webp" width="650">
 
 [Visit the webpage](https://theodoremoreland.github.io/PortfolioExample/)

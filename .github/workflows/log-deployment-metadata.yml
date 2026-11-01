@@ -11,7 +11,7 @@ jobs:
     uses: theodoremoreland/theodoremoreland/.github/workflows/log-deployment-metadata.yml@master
     with:
       project_id: "${{ github.event.repository.id }}"
-      target: "aws-amplify"
+      target: "github-pages"
       status: ${{ github.event.workflow_run.conclusion == 'success' && 'success' || 'failed' }}
       workflow_run_id: "${{ github.event.workflow_run.id }}"
     secrets:

@@ -105,7 +105,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--background-color);
     background: radial-gradient(
         circle farthest-corner at bottom right,
         var(--secondary-color) -35%,
@@ -162,7 +161,7 @@ article {
 }
 
 h2 {
-    font-family: custom-bold;
+    font-family: custom-bold, sans-serif;
     font-size: 2.25rem;
     text-shadow: 0 2px 2px var(--secondary-color),
         -2px 5px 1px var(--secondary-color-shadow-1);
@@ -178,7 +177,7 @@ h2 {
 }
 
 h3 {
-    font-family: custom-bold;
+    font-family: custom-bold, sans-serif;
     font-size: 1.85rem;
 }
 
@@ -193,7 +192,7 @@ a:hover {
 
 p {
     max-width: 75ch;
-    font-family: custom-regular;
+    font-family: custom-regular, sans-serif;
     font-size: 0.9rem;
     line-height: 1.5;
     text-justify: inter-word;
@@ -236,7 +235,7 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    font-family: custom-regular;
+    font-family: custom-regular, sans-serif;
     width: 100%;
     max-width: var(--max-width);
     padding: 1em 0;
@@ -452,7 +451,7 @@ nav :nth-child(9) {
     width: 100%;
     box-sizing: border-box;
     padding: 1rem;
-    font-family: custom-regular;
+    font-family: custom-regular, sans-serif;
     color: var(--tertiary-color);
     animation: fade-in 1.2s forwards linear;
     animation-delay: 8s;
@@ -558,7 +557,7 @@ nav :nth-child(9) {
     width: 100%;
     max-width: 50ch;
     height: 100%;
-    font-family: custom-bold;
+    font-family: custom-bold, sans-serif;
     font-size: 0.9rem;
     color: var(--secondary-color-transparent-05) !important;
     padding: 0;
@@ -639,7 +638,6 @@ nav :nth-child(9) {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    margin: 0;
     padding: 0;
     text-align: left;
     list-style: none;
@@ -667,7 +665,6 @@ nav :nth-child(9) {
 
 #__skills .level {
     height: 1em;
-    background-color: var(--secondary-color);
     background: radial-gradient(
         circle farthest-corner at top right,
         var(--secondary-color-transparent-05) 0%,
@@ -837,7 +834,6 @@ nav :nth-child(9) {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    margin: 0;
     padding: 0;
     text-align: left;
     list-style: none;
@@ -903,7 +899,7 @@ nav :nth-child(9) {
 }
 
 .project .name {
-    font-family: custom-regular;
+    font-family: custom-regular, sans-serif;
     font-size: 1.5rem;
     color: var(--primary-color);
     text-align: left;
@@ -919,7 +915,7 @@ nav :nth-child(9) {
 
 .project img {
     /* Used in conjunction with ch unit to limit width. */
-    font-family: custom-regular;
+    font-family: custom-regular, sans-serif;
     font-size: 1.23rem;
     width: 100%;
     aspect-ratio: 4/3;
@@ -988,11 +984,10 @@ nav :nth-child(9) {
     flex-grow: 1;
     width: 100%;
     padding: 0.5em 1em;
-    font-family: custom-regular;
+    font-family: custom-regular, sans-serif;
     font-size: 1.1rem;
     text-align: center;
     color: var(--secondary-color);
-    background-color: var(--background-color);
     background: radial-gradient(
         circle farthest-corner at bottom right,
         var(--secondary-color) -26%,
@@ -1024,7 +1019,7 @@ footer {
 }
 
 footer h3 {
-    font-family: custom-regular;
+    font-family: custom-regular, sans-serif;
     color: var(--quaternary-color);
     text-shadow: 0 2px 2px var(--secondary-color),
         -2px 2px 1px rgb(194, 16, 111);
@@ -1070,7 +1065,7 @@ footer img#linkedin-logo {
 
 footer a {
     color: var(--quaternary-color);
-    font-family: custom-regular;
+    font-family: custom-regular, sans-serif;
     font-size: 1.1rem;
     display: inline-block;
     margin: 12px 0px;

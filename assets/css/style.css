@@ -638,7 +638,6 @@ nav :nth-child(9) {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    margin: 0;
     padding: 0;
     text-align: left;
     list-style: none;
@@ -835,7 +834,6 @@ nav :nth-child(9) {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    margin: 0;
     padding: 0;
     text-align: left;
     list-style: none;
